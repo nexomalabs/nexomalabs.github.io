@@ -271,7 +271,7 @@ h1 {
 .product-grid,
 .build-grid,
 .project-grid,
-.stack-grid {
+.expertise-grid {
   display: grid;
   gap: 1rem;
 }
@@ -288,13 +288,14 @@ h1 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.stack-grid {
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+.expertise-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .product-card,
 .build-card,
 .project-card,
+.expertise-card,
 .open-source-card,
 .contact-card {
   border: 1px solid var(--line);
@@ -308,15 +309,10 @@ h1 {
 .product-card:hover,
 .build-card:hover,
 .project-card:hover,
-.stack-pill:hover,
+.expertise-card:hover,
 .open-source-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 24px 50px rgba(0, 0, 0, 0.34);
-}
-
-.build-icon {
-  margin: 0 0 0.3rem;
-  font-size: 1.65rem;
 }
 
 .card-label,
@@ -332,6 +328,7 @@ h1 {
 .product-card h3,
 .build-card h3,
 .project-card h3,
+.expertise-card h3,
 .contact-card h3 {
   margin: 0.2rem 0 0.45rem;
   font-size: 1.12rem;
@@ -340,6 +337,7 @@ h1 {
 .product-card p,
 .build-card p,
 .project-card p,
+.expertise-card p,
 .contact-card p {
   margin: 0;
   color: var(--muted);
@@ -425,17 +423,38 @@ h1 {
   background: rgba(59, 130, 246, 0.14);
 }
 
-.stack-pill {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: rgba(21, 23, 28, 0.92);
-  padding: 0.65rem 0.5rem;
+.build-card {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  min-height: 108px;
+}
+
+.build-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.expertise-card ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
   color: var(--muted);
-  font-size: 0.87rem;
-  transition: transform 0.2s ease;
+}
+
+.expertise-card li {
+  margin: 0.32rem 0;
+}
+
+.research-note {
+  margin-bottom: 1.2rem;
+  border-left: 3px solid rgba(59, 130, 246, 0.65);
+  padding-left: 0.9rem;
+}
+
+.selected-tech {
+  margin-top: 0.7rem;
+  font-size: 0.86rem;
+  color: var(--muted);
 }
 
 .about-text {
@@ -578,7 +597,7 @@ h1 {
   .product-grid,
   .project-grid,
   .build-grid,
-  .stack-grid {
+  .expertise-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -627,7 +646,7 @@ h1 {
   .product-grid,
   .build-grid,
   .project-grid,
-  .stack-grid {
+  .expertise-grid {
     grid-template-columns: 1fr;
   }
 
