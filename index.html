@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexoma Labs LLC — Building Intelligent Apps</title>
+  <meta name="description" content="Nexoma Labs LLC builds practical mobile apps, AI-powered tools, and professional technical resources." />
+
+  <style>
+    :root {
+      --bg: #050816;
+      --bg2: #0b1020;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --line: rgba(255,255,255,.08);
+      --cyan: #38bdf8;
+      --purple: #8b5cf6;
+      --card: rgba(255,255,255,.04);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(56,189,248,.15), transparent 35%),
+        radial-gradient(circle at bottom left, rgba(139,92,246,.15), transparent 35%),
+        linear-gradient(180deg, var(--bg), var(--bg2));
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 2rem));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(12px);
+      background: rgba(5,8,22,.7);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .9rem 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+    .brand img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 1.25rem;
+      font-size: .95rem;
+    }
+
+    nav a:hover { color: var(--text); }
+
+    .hero {
+      padding: 5rem 0 3rem;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .35rem .75rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: .85rem;
+      background: rgba(255,255,255,.03);
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 6vw, 5rem);
+      line-height: 1.02;
+      margin: 1rem 0;
+      letter-spacing: -.04em;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, var(--cyan), var(--purple));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .lead {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 42rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      padding: .9rem 1.2rem;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform .15s ease, opacity .15s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .btn-primary {
+      background: linear-gradient(90deg, var(--cyan), var(--purple));
+      color: #04111f;
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: rgba(255,255,255,.03);
+    }
+
+    .hero-card {
+      position: relative;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      overflow: hidden;
+      background: rgba(255,255,255,.03);
+      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+    }
+
+    .hero-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(5,8,22,.5), transparent 40%);
+      pointer-events: none;
+    }
+
+    section {
+      padding: 4rem 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: .5rem;
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .card {
+      padding: 1.5rem;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      background: var(--card);
+    }
+
+    .card h3 {
+      margin-top: .25rem;
+      margin-bottom: .5rem;
+    }
+
+    .card p { color: var(--muted); }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      margin-top: 1.5rem;
+    }
+
+    .pill {
+      padding: .5rem .9rem;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .9rem;
+      background: rgba(255,255,255,.03);
+    }
+
+    .cta {
+      padding: 2rem;
+      border-radius: 24px;
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(135deg, rgba(56,189,248,.08), rgba(139,92,246,.08)),
+        rgba(255,255,255,.03);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    footer {
+      padding: 2rem 0 3rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 3.5rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <img src="assets/logo.png" alt="Nexoma Labs logo" />
+        <span>Nexoma Labs LLC</span>
+      </a>
+
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#opensource">Open Source</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="container hero">
+      <div>
+        <div class="eyebrow">🚀 AI • Mobile • Web • Cloud</div>
+        <h1>Building intelligent apps, <span class="gradient">shaping the future</span>.</h1>
+        <p class="lead">
+          Nexoma Labs LLC creates practical mobile applications, AI-powered tools,
+          cloud solutions, and professional technical resources designed to solve
+          real-world problems.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="https://github.com/NexomaLabs" target="_blank" rel="noreferrer">
+            View GitHub Organization
+          </a>
+          <a class="btn btn-secondary" href="#products">
+            Explore Products
+          </a>
+        </div>
+
+        <div class="pill-row">
+          <span class="pill">React Native</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">AI Workflows</span>
+          <span class="pill">Cloud Automation</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <img src="assets/banner.png" alt="Nexoma Labs hero banner" />
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <h2 class="section-title">Products</h2>
+        <p class="section-subtitle">Focused on practical software that delivers measurable value.</p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Gym Body – Fitly</h3>
+            <p>A modern fitness and workout tracking app built with a clean, performance-first mobile experience.</p>
+          </article>
+
+          <article class="card">
+            <h3>AI & Prompt Engineering Series</h3>
+            <p>Professional technical books covering AI foundations, prompt engineering, and production AI systems.</p>
+          </article>
+
+          <article class="card">
+            <h3>Future B2B Solutions</h3>
+            <p>Automation, analytics, and AI-powered business tools currently in active development.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="opensource">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2 style="margin:0 0 .5rem">Open source & companion resources</h2>
+            <p style="margin:0;color:var(--muted)">
+              Explore public repositories, technical resources, labs, and future developer tools maintained by Nexoma Labs.
+            </p>
+          </div>
+
+          <a class="btn btn-primary" href="https://github.com/NexomaLabs" target="_blank" rel="noreferrer">
+            Open GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Nexoma Labs</h2>
+        <p class="lead">
+          Our mission is to build software and technical resources that help people work smarter, learn faster, and create meaningful impact. We combine modern engineering practices with practical AI workflows to deliver products that are both powerful and approachable.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-row">
+      <div>
+        <strong>Nexoma Labs LLC</strong><br />
+        Building intelligent apps and technical resources.
+      </div>
+
+      <div style="text-align:right">
+        <a href="mailto:books@nexomalabs.com" style="color:var(--text);text-decoration:none">books@nexomalabs.com</a><br />
+        <a href="https://github.com/NexomaLabs" target="_blank" rel="noreferrer" style="color:var(--text);text-decoration:none">github.com/NexomaLabs</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
