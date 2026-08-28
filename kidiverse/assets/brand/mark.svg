@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kidiverse">
+  <title>Kidiverse</title>
+  <!-- The mark is the gesture: a whole body, mid-jump, arms open. It is the one posture
+       every Kidiverse world is built to recognise. Stroked in currentColor so it inherits
+       whatever it sits on. -->
+  <g fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 27V39" />
+    <path d="M32 30 18.5 17.5" />
+    <path d="M32 30 45.5 17.5" />
+    <path d="M32 39 21 52.5" />
+    <path d="M32 39 43 52.5" />
+  </g>
+  <circle cx="32" cy="15" r="6.5" fill="currentColor" />
+</svg>
