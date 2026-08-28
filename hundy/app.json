@@ -1,8 +1,9 @@
 {
   "name": "Hundy",
   "category": "Mobile Product",
-  "tagline": "A Nexoma Labs mobile application, built local-first with privacy as the default.",
+  "tagline": "Every rep counts. Built by Nexoma Labs - the most accurate camera-based rep counting we know how to make.",
   "support_email": "support@nexomalabs.com",
-  "effective_date": "August 27, 2026",
-  "updated_date": "August 27, 2026"
+  "footer_note": "Hundy is a training tool, not a medical device.",
+  "effective_date": "August 24, 2026",
+  "updated_date": "August 24, 2026"
 }
