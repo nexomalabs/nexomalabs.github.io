@@ -443,7 +443,6 @@ def doc_page(
         <h2>Questions about this document?</h2>
         <p>
           Contact Nexoma Labs LLC at <a href="mailto:{email}">{email}</a>.
-          We respond to privacy and support requests within 5 business days.
         </p>
       </aside>
 
