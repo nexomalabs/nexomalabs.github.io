@@ -949,3 +949,59 @@ h1 {
     min-width: 460px;
   }
 }
+
+/* Clickable product cards: the whole card is the hit target, while the card
+   keeps its <article> semantics and exposes exactly one link to assistive tech. */
+.product-card {
+  position: relative;
+}
+
+.product-card h3 .card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-card h3 .card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.product-card:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.product-card h3 .card-link:focus-visible {
+  outline: none;
+}
+
+.card-cta {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.94rem;
+}
+
+.card-cta::after {
+  content: " \2192";
+}
+
+.product-card:hover .card-cta {
+  color: var(--accent-2);
+}
+
+.card-cta-muted {
+  color: var(--muted);
+}
+
+.card-cta-muted::after {
+  content: "";
+}
+
+/* Mark links that leave the site. */
+.card-cta-external::after {
+  content: " \2197";
+}
