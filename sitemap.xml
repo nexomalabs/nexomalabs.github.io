@@ -7,46 +7,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.nexomalabs.com/fitly/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.nexomalabs.com/fitly/privacy</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.nexomalabs.com/fitly/terms</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.nexomalabs.com/fitly/support</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.nexomalabs.com/habit-tracker/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.nexomalabs.com/habit-tracker/privacy</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.nexomalabs.com/habit-tracker/terms</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.nexomalabs.com/habit-tracker/support</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.nexomalabs.com/hundy/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -63,26 +23,6 @@
   </url>
   <url>
     <loc>https://www.nexomalabs.com/hundy/faq</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.nexomalabs.com/kidivers/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.nexomalabs.com/kidivers/privacy</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.nexomalabs.com/kidivers/terms</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.nexomalabs.com/kidivers/support</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

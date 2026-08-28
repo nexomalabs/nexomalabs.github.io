@@ -10,3 +10,6 @@
 # Python
 __pycache__/
 *.pyc
+
+# Local drafts — on disk for review, never published
+*.draft.md
