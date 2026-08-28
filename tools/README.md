@@ -115,6 +115,42 @@ step around it forever. The same protection covers any generated filename.
 
 To hand a page back to the generator, delete it and rebuild.
 
+### Per-app theming
+
+By default the generated pages use the Nexoma Labs site design
+(`/assets/style.css`, Nexoma header and footer).
+
+**If an app ships `<app>/assets/docs.css`, its pages use that instead** — the
+app's own stylesheet, its own brand mark in the header, a nav across its
+documents, and a footer built from `app.json`. Nothing else needs configuring;
+the file's presence is the switch.
+
+`hundy/assets/docs.css` is the working example: it mirrors the tokens in
+`hundy/index.html` so the privacy, terms and FAQ pages carry the app's dark
+palette and lime accent rather than the Nexoma blue.
+
+A themed stylesheet is self-contained — it must define its own reset,
+typography and layout, because the site stylesheet is not loaded alongside it.
+The classes the generator emits, and which a theme therefore needs to style:
+
+| Class | Where |
+| --- | --- |
+| `.nav`, `.nav-in`, `.shell`, `.brand`, `.nav-links` | Header |
+| `.doc-main`, `.doc`, `.doc-breadcrumb`, `.eyebrow`, `.doc-dates`, `.doc-rule` | Page frame |
+| `.doc-body` and the elements inside it | Rendered Markdown |
+| `.doc-table-wrap`, `.doc-table` | Pipe tables |
+| `.doc-contact`, `.doc-siblings` | Contact panel, related-document buttons |
+| `.btn`, `.btn-sm`, `.btn-secondary`, `.btn-ghost` | Buttons |
+| `.doc-card-grid`, `.doc-card`, `.card-label`, `.lead` | Generated app index |
+| `.foot`, `.foot-in`, `.foot-btm`, `.blurb` | Footer |
+
+Two optional `app.json` keys feed the themed chrome: `tagline` becomes the
+footer blurb, and `footer_note` the small print on the bottom right.
+
+The brand mark is currently the Hundy glyph, inlined as `BRAND_MARK` in
+`build_docs.py`. A second themed app needs that made per-app — read it from
+`<app>/assets/brand.svg`, for instance.
+
 ### Your own titles and dates win
 
 - The page heading comes from the document's own `# H1` when it has one, falling
@@ -135,8 +171,14 @@ Every key is required and must be non-empty.
 | `category` | Eyebrow label on the app index | `"Mobile Product"` |
 | `tagline` | Lead paragraph on the app index | `"A fitness companion..."` |
 | `support_email` | Contact panel on every page | `"support@nexomalabs.com"` |
-| `effective_date` | Date line under the page title | `"August 27, 2026"` |
-| `updated_date` | Date line under the page title | `"August 27, 2026"` |
+| `effective_date` | Date line under the page title | `"August 24, 2026"` |
+| `updated_date` | Date line under the page title | `"August 24, 2026"` |
+
+Optional keys:
+
+| Key | Appears | Example |
+| --- | --- | --- |
+| `footer_note` | Bottom-right small print, themed pages only | `"Hundy is a training tool, not a medical device."` |
 
 Dates are free text and are printed verbatim — they are not parsed, so keep the
 format consistent by hand. They are **not** read from the Markdown; the
