@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Kidiverse">
+  <title>Kidiverse</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B4E7A" />
+      <stop offset="1" stop-color="#0A1422" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="114" fill="url(#sky)" />
+  <g transform="translate(256 256) scale(6.4) translate(-32 -32)">
+    <g fill="none" stroke="#FFB43D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 27V39" />
+      <path d="M32 30 18.5 17.5" />
+      <path d="M32 30 45.5 17.5" />
+      <path d="M32 39 21 52.5" />
+      <path d="M32 39 43 52.5" />
+    </g>
+    <circle cx="32" cy="15" r="6.5" fill="#FFB43D" />
+  </g>
+</svg>

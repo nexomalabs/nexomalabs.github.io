@@ -1,0 +1,446 @@
+<title>Kidiverse</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Kidiverse turns a phone propped across the room into a camera that watches a child move, and a world that answers. Camera-driven active play on hardware already in the house. In development at NexOma Labs." />
+<meta name="theme-color" content="#0A1422" />
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/brand/app-icon.svg" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Kidiverse — your child's body is the controller" />
+<meta property="og:description" content="Arms up gathers the storm. A sweep drives the wind. A jump forks the lightning. Camera-driven active play on the phone you already own." />
+<!-- Absolute, because link scrapers do not resolve relative paths. If the site is
+     published anywhere other than the URL below, change these three lines. -->
+<link rel="canonical" href="https://www.nexomalabs.com/kidiverse/" />
+<meta property="og:url" content="https://www.nexomalabs.com/kidiverse/" />
+<meta property="og:image" content="https://www.nexomalabs.com/kidiverse/assets/og-card.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,300..600&display=swap" />
+<link rel="stylesheet" href="styles.css" />
+
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <g id="fig-base">
+      <circle cx="32" cy="13" r="5" />
+      <path d="M32 19v17" />
+      <path d="M32 36 24 51" />
+      <path d="M32 36 40 51" />
+    </g>
+  </defs>
+  <symbol id="g-gather" viewBox="0 0 64 64">
+    <use href="#fig-base" />
+    <path d="M32 23 21 8" /><path d="M32 23 43 8" />
+    <path d="M14 14c4-4 9-4 12 0" opacity=".5" /><path d="M38 14c4-4 9-4 12 0" opacity=".5" />
+  </symbol>
+  <symbol id="g-wind" viewBox="0 0 64 64">
+    <use href="#fig-base" />
+    <path d="M32 23 12 21" /><path d="M32 23 47 29" />
+    <path d="M4 14h11" opacity=".5" /><path d="M2 27h9" opacity=".5" /><path d="M5 34h13" opacity=".5" />
+  </symbol>
+  <symbol id="g-jump" viewBox="0 0 64 64">
+    <g transform="translate(0 -6)">
+      <circle cx="32" cy="13" r="5" />
+      <path d="M32 19v15" />
+      <path d="M32 34 23 42l-2 7" /><path d="M32 34 41 42l2 7" />
+      <path d="M32 22 20 12" /><path d="M32 22 44 12" />
+    </g>
+    <path d="M20 58h24" opacity=".5" stroke-dasharray="3 5" />
+  </symbol>
+  <symbol id="g-spin" viewBox="0 0 64 64">
+    <use href="#fig-base" />
+    <path d="M32 23 45 19" />
+    <path d="M56 15a7 7 0 1 1-6-3" opacity=".9" />
+    <path d="m49 8 2 5-5 1" opacity=".9" />
+  </symbol>
+  <symbol id="g-clear" viewBox="0 0 64 64">
+    <use href="#fig-base" />
+    <path d="M32 23 14 32" /><path d="M32 23 50 32" />
+    <path d="M32 3v5" opacity=".5" /><path d="M17 8l3 4" opacity=".5" /><path d="M47 8l-3 4" opacity=".5" />
+  </symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top">
+    <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+      <g fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M32 27V39" /><path d="M32 30 18.5 17.5" /><path d="M32 30 45.5 17.5" />
+        <path d="M32 39 21 52.5" /><path d="M32 39 43 52.5" />
+      </g>
+      <circle cx="32" cy="15" r="6.5" fill="currentColor" />
+    </svg>
+    <span class="nav__word">Kidiverse</span>
+  </a>
+  <nav class="nav__links" aria-label="Sections">
+    <a href="#loop">How it works</a>
+    <a href="#demo">Demo</a>
+    <a href="#worlds">Worlds</a>
+    <a href="#camera">Privacy</a>
+    <a href="#status">Status</a>
+  </nav>
+  <div class="nav__actions">
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to clear sky">
+      <span class="theme-toggle__dot"></span><span class="theme-toggle__label" id="theme-label">Storm</span>
+    </button>
+    <a class="btn btn--solid btn--sm" href="#early">Early access</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero__scrim" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="eyebrow">NexOma Labs · Camera-driven active play</p>
+      <h1 class="hero__title">Your child&rsquo;s body<br />is the controller</h1>
+      <p class="hero__line">Arms up, and the sky answers.</p>
+      <p class="hero__lede">A phone propped across the room watches a child move, and a world moves back. Arms overhead gather the storm. A sweep drives the wind sideways. A jump forks the lightning. No headset, no console, no new hardware &mdash; the camera is already in the house.</p>
+      <div class="hero__cta">
+        <a class="btn btn--solid" href="#early">Join the early access list</a>
+        <a class="btn btn--ghost" href="#demo">Move the sky &darr;</a>
+      </div>
+      <ul class="chips" aria-label="Current status">
+        <li class="chip">Three worlds built</li>
+        <li class="chip">Running on iPhone</li>
+        <li class="chip chip--open">Android gate not yet passed</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band--problem" id="problem">
+    <div class="wrap">
+      <p class="eyebrow reveal">The gap</p>
+      <h2 class="h2 reveal">Screen time is sitting time</h2>
+      <div class="measure reveal">
+        <p>A parent hands over a tablet and the child stops moving. Parents are not confused about what is wrong &mdash; they are short of options, and each option fails in a specific way.</p>
+      </div>
+      <div class="ledger reveal">
+        <div class="ledger__row">
+          <div class="ledger__k">Movement videos<span>~$10 / month</span></div>
+          <p class="ledger__v">The screen never knows the child is there. A child can sit down halfway through and nothing changes. Performance without response.</p>
+        </div>
+        <div class="ledger__row">
+          <div class="ledger__k">Dedicated hardware<span>$299 + $89 / year</span></div>
+          <p class="ledger__v">It genuinely works &mdash; and asks a parent to buy new hardware to solve a problem caused by hardware they already own.</p>
+        </div>
+        <div class="ledger__row">
+          <div class="ledger__k">Console fitness<span>Console required</span></div>
+          <p class="ledger__v">Needs a console in the room, and skews older than the six-to-nine-year-old this is built for.</p>
+        </div>
+        <div class="ledger__row">
+          <div class="ledger__k">Camera apps on phones<span>The nearest thing</span></div>
+          <p class="ledger__v">They prove the idea works on a phone. The tier is thin and indie, and nobody well-made owns it.</p>
+        </div>
+      </div>
+      <p class="pullquote reveal">The open gap is responsive, camera-driven active play on hardware already in the house.</p>
+    </div>
+  </section>
+
+  <section class="band" id="loop">
+    <div class="wrap">
+      <p class="eyebrow reveal">The spine</p>
+      <h2 class="h2 reveal">One loop, every world</h2>
+      <div class="measure reveal">
+        <p>Every Kidiverse world runs the same four steps. A new world is mostly content, not mostly engineering &mdash; which is the entire reason the scene framework exists.</p>
+      </div>
+      <ol class="loop" aria-label="The interaction loop">
+        <li class="loop__step reveal">
+          <span class="loop__n">01</span>
+          <h3>Camera</h3>
+          <p>A phone propped across the room, landscape, watching the whole body. Frames are processed in memory on the phone and discarded.</p>
+        </li>
+        <li class="loop__step reveal">
+          <span class="loop__n">02</span>
+          <h3>Body tracking</h3>
+          <p>Pose and hand landmarks &mdash; shoulders, elbows, wrists, hips, knees, ankles. Twenty-two points, on-device. No face geometry, ever.</p>
+        </li>
+        <li class="loop__step reveal">
+          <span class="loop__n">03</span>
+          <h3>Gesture</h3>
+          <p>Movement becomes meaning: gather, sweep, jump, spin, clear. Each one declares its own confirmation window, its refractory period, and who wins when two fire at once.</p>
+        </li>
+        <li class="loop__step reveal">
+          <span class="loop__n">04</span>
+          <h3>The world answers</h3>
+          <p>Cloud thickens, wind turns, lightning forks, daylight returns. Fast enough that a child reads it as cause and effect &mdash; the whole difference between this and a movement video.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band band--demo" id="demo">
+    <div class="wrap">
+      <p class="eyebrow reveal">Try it here</p>
+      <h2 class="h2 reveal">Move the sky</h2>
+      <div class="measure reveal">
+        <p>Pick a gesture. The sky answers with the same mapping the app uses &mdash; this is the browser drawing it, not a recording.</p>
+      </div>
+      <div class="demo">
+        <div class="demo__rail" role="group" aria-label="Gestures">
+          <button class="gest is-active" type="button" data-gesture="gather" aria-pressed="true">
+            <svg class="gest__icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#g-gather" /></svg>
+            <span class="gest__body">
+              <span class="gest__name">Arms overhead</span>
+              <span class="gest__effect">Gather storm clouds</span>
+              <span class="gest__meta">Hold &middot; continuous magnitude</span>
+            </span>
+          </button>
+          <button class="gest" type="button" data-gesture="wind" aria-pressed="false">
+            <svg class="gest__icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#g-wind" /></svg>
+            <span class="gest__body">
+              <span class="gest__name">Horizontal sweep</span>
+              <span class="gest__effect">Drive the wind, left or right</span>
+              <span class="gest__meta">Hold &middot; magnitude and direction</span>
+            </span>
+          </button>
+          <button class="gest" type="button" data-gesture="jump" aria-pressed="false">
+            <svg class="gest__icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#g-jump" /></svg>
+            <span class="gest__body">
+              <span class="gest__name">Jump</span>
+              <span class="gest__effect">Fork the lightning</span>
+              <span class="gest__meta">Instant &middot; rate-limited</span>
+            </span>
+          </button>
+          <button class="gest" type="button" data-gesture="spin" aria-pressed="false">
+            <svg class="gest__icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#g-spin" /></svg>
+            <span class="gest__body">
+              <span class="gest__name">Hand circle</span>
+              <span class="gest__effect">Wind up a tornado</span>
+              <span class="gest__meta">Hold &middot; continuous magnitude</span>
+            </span>
+          </button>
+          <button class="gest" type="button" data-gesture="clear" aria-pressed="false">
+            <svg class="gest__icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#g-clear" /></svg>
+            <span class="gest__body">
+              <span class="gest__name">Arms lowered and spread</span>
+              <span class="gest__effect">Clear the sky back to sun</span>
+              <span class="gest__meta">Hold &middot; continuous magnitude</span>
+            </span>
+          </button>
+        </div>
+        <figure class="demo__stage">
+          <div class="stage">
+            <canvas id="demo-canvas"></canvas>
+            <div class="stage__hud">
+              <span class="hud__k">world state</span>
+              <span class="hud__v"><b id="hud-storm">0.00</b> storminess</span>
+              <span class="hud__v"><b id="hud-wind">0.00</b> wind</span>
+              <span class="hud__v"><b id="hud-sun">1.00</b> daylight</span>
+            </div>
+          </div>
+          <figcaption>Lightning is capped at three flashes a second here, exactly as it is in the app &mdash; a photosensitivity limit that lives in world logic, not in the animation.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="worlds">
+    <div class="wrap">
+      <p class="eyebrow reveal">The library</p>
+      <h2 class="h2 reveal">Three worlds, one engine</h2>
+      <div class="measure reveal">
+        <p>Worlds two and three were built on the framework the first world earned. Same gesture recognition, same framing, same session lifecycle &mdash; different meaning.</p>
+      </div>
+    </div>
+    <div class="worlds">
+      <article class="world reveal">
+        <div class="world__art"><img src="assets/worlds/valley-open.jpg" alt="A flat-vector jungle valley under an open sky, the setting for Weather Control" loading="lazy" width="1600" height="899" /></div>
+        <div class="world__body">
+          <p class="eyebrow">World one</p>
+          <h3>Weather Control</h3>
+          <p>A valley, a sky, and a child who owns it. Arms overhead gather cloud until it is heavy enough to rain. A sweep takes the rain sideways. A jump cracks thunder. Arms lowered and spread bring the sun back.</p>
+          <p class="world__note">The child sees themselves inside the scene, cut out from the room behind them.</p>
+        </div>
+      </article>
+      <article class="world world--flip reveal">
+        <div class="world__art"><img src="assets/worlds/valley-palms.jpg" alt="A deeper jungle valley framed by palms, the setting for Weather Control 2" loading="lazy" width="1600" height="899" /></div>
+        <div class="world__body">
+          <p class="eyebrow">World three</p>
+          <h3>Weather Control 2</h3>
+          <p>The child stands inside a sky and drives it. Spin a hand and a funnel winds up beside it. Sweep and the wind takes the rain sideways. Jump inside a storm you built yourself and it forks lightning.</p>
+          <p class="world__note">The tornado has a home in the scene whether or not it can find your hand &mdash; which is why a television with no body data can still draw it correctly.</p>
+        </div>
+      </article>
+      <article class="world world--anatomy reveal">
+        <div class="world__art world__art--figure">
+          <canvas id="anatomy-canvas" aria-label="An anatomical figure moving through skeleton, muscle and organ layers"></canvas>
+          <div class="layerpills" id="anatomy-pills">
+            <button type="button" class="is-active" data-layer="skeleton">Skeleton</button>
+            <button type="button" data-layer="muscles">Muscles</button>
+            <button type="button" data-layer="organs">Organs</button>
+            <button type="button" data-layer="full">Full body</button>
+          </div>
+        </div>
+        <div class="world__body">
+          <p class="eyebrow">World two</p>
+          <h3>Human Anatomy</h3>
+          <p>A child stands in front of the camera and an anatomical figure moves with them. They press Skeleton, Muscles, Organs or Full Body, and the same tracked movement is shown through a different layer of the body.</p>
+          <p class="world__note">Reach, crouch and turn cross into the world as meaning. Joint coordinates never do.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="band band--tint" id="profiles">
+    <div class="wrap">
+      <p class="eyebrow reveal">Growing with the child</p>
+      <h2 class="h2 reveal">One build, three ways to play</h2>
+      <div class="measure reveal">
+        <p>A six-year-old needs large, forgiving gestures and a reward for taking part. A nine-year-old wants something to miss. Both are the same build &mdash; the difference is configuration the framework reads, not code the world branches on.</p>
+      </div>
+      <div class="table-scroll reveal">
+        <table class="profiles">
+          <caption class="sr-only">How the three play profiles differ</caption>
+          <thead>
+            <tr><th scope="col">&nbsp;</th><th scope="col">Play</th><th scope="col">Challenge</th><th scope="col">Mission</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Precision asked for</th><td>Low &mdash; large and forgiving</td><td>Moderate</td><td>High, including timing windows</td></tr>
+            <tr><th scope="row">What can happen</th><td>No-fail. Effort is rewarded</td><td>Objectives can be missed, retry at once</td><td>Objectives can fail. Mastery gates progress</td></tr>
+            <tr><th scope="row">Shape of a session</th><td>Free play with a gentle arc</td><td>A timed objective</td><td>A mission with stated stakes</td></tr>
+            <tr><th scope="row">Reward</th><td>Immediate sensory spectacle</td><td>Score against a personal best</td><td>A mastery track with unlocks</td></tr>
+            <tr><th scope="row">How it instructs</th><td>Voice and pictures only</td><td>Short text plus voice</td><td>Text-forward briefing</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="tv">
+    <div class="wrap">
+      <p class="eyebrow reveal">The second surface</p>
+      <h2 class="h2 reveal">The phone watches.<br />The television plays.</h2>
+      <div class="split">
+        <div class="measure reveal">
+          <p>Putting the world on the television is not a cosmetic upgrade. The child looks at a big screen at a natural playing distance instead of squinting at a propped phone, the phone is freed to be a dedicated sensor rather than sensor and display at once, and a shared screen is the only sensible surface for two children playing together.</p>
+          <p>It also puts the parent&rsquo;s controls on the device the parent is already holding.</p>
+          <p class="callout">Camera frames and raw body data never leave the phone. Only the world&rsquo;s own state crosses your network &mdash; and it never reaches the internet.</p>
+        </div>
+        <div class="wire reveal" aria-hidden="true">
+          <div class="wire__node wire__node--phone">
+            <span class="wire__label">Phone</span>
+            <span class="wire__sub">Camera &middot; tracking &middot; gestures &middot; parent controls</span>
+          </div>
+          <div class="wire__link"><span>world state only</span></div>
+          <div class="wire__node wire__node--tv">
+            <span class="wire__label">Television</span>
+            <span class="wire__sub">Draws the world</span>
+          </div>
+        </div>
+      </div>
+      <p class="note reveal">Designed and partly built. It cannot show a child yet &mdash; one decision about how imagery reaches the second screen is deliberately still open, and it is being answered in the order that keeps the privacy claim intact.</p>
+    </div>
+  </section>
+
+  <section class="band band--camera" id="camera">
+    <div class="wrap">
+      <p class="eyebrow reveal">For parents</p>
+      <h2 class="h2 reveal">What the camera does,<br />in plain words</h2>
+      <div class="measure reveal">
+        <p>A camera pointed at a child is the biggest thing a parent will hesitate over, and it deserves a straight answer rather than a paragraph of policy. These are the words the app itself shows, before the phone asks for anything.</p>
+      </div>
+      <div class="disclosures">
+        <div class="disc reveal">
+          <h3>Your child plays by moving, and they see themselves in the game.</h3>
+          <p>Kidiverse uses the camera to follow your child&rsquo;s body &mdash; arms, legs, how they move &mdash; and to cut their picture out of the room so they appear inside the game world. That picture is the point of the game: they raise their arms and see themselves raise the storm.</p>
+        </div>
+        <div class="disc reveal">
+          <h3>Anyone the camera can see appears on screen, not just the child playing.</h3>
+          <p>The camera cannot tell one person from another. It separates people from the room behind them, so anybody who walks into view appears in the game too. The only way not to appear is to stay out of the camera&rsquo;s view.</p>
+        </div>
+        <div class="disc reveal">
+          <h3>Nothing is recorded. Nothing is saved. Nothing is sent anywhere.</h3>
+          <p>The picture is shown on the screen and then it is gone. There is no recording, no photo, no video file, and nothing is uploaded to us or to anyone else. Closing the app leaves nothing behind.</p>
+        </div>
+        <div class="disc reveal">
+          <h3>You can say no, and you can stop at any time.</h3>
+          <p>If you decline the camera, Kidiverse cannot run &mdash; the whole game is your child moving. Nothing else changes, and you can grant it later from your device settings.</p>
+        </div>
+      </div>
+      <ul class="commitments reveal">
+        <li><b>Processed on the phone.</b> There is no cloud vision pipeline, now or later.</li>
+        <li><b>Pose and hand landmarks only.</b> No face geometry, no face mesh, no templates, and no facial recognition of any kind. Settled, not deferred.</li>
+        <li><b>No accounts, no ads, no third-party analytics.</b> Built for the terms Apple&rsquo;s Kids Category sets, which hold for every future update once you opt in.</li>
+        <li><b>Head points are discarded before they reach the game.</b> Not filtered later &mdash; they never cross out of the tracker.</li>
+        <li><b>The shipping build cannot contain the tools we test with.</b> Observer surfaces and the network transport are resolved out of it, so &ldquo;no code path capable of transmitting camera imagery exists&rdquo; is something an inspector can verify by reading the build, not a promise about intent.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band--status" id="status">
+    <div class="wrap">
+      <p class="eyebrow reveal">Honest ledger</p>
+      <h2 class="h2 reveal">Where it is today</h2>
+      <div class="measure reveal">
+        <p>Kidiverse is in development. Rather than describe it as finished, here is the same split the team keeps internally &mdash; what has landed, and what has not been proven yet.</p>
+      </div>
+      <div class="status">
+        <div class="status__col reveal">
+          <h3 class="status__h status__h--yes">Built and tested</h3>
+          <ul>
+            <li>Three worlds on one shared scene framework.</li>
+            <li>Gesture recognition with declared confirmation windows, refractory periods and deterministic arbitration when two gestures fire at once.</li>
+            <li>Framing and onboarding &mdash; the &ldquo;step back until you fit&rdquo; moment treated as a designed feature rather than setup friction.</li>
+            <li>The parent-facing camera explanation, with a test that scans the whole repository for wording that has been ruled misleading.</li>
+            <li>A public build that provably cannot contain the validation tooling.</li>
+            <li>On-device tracking and rendering on iPhone.</li>
+          </ul>
+        </div>
+        <div class="status__col reveal">
+          <h3 class="status__h status__h--no">Not proven yet</h3>
+          <ul>
+            <li><b>It has never run on the target Android device.</b> Android is a gate, not a port, and that gate has not been passed.</li>
+            <li><b>No frame rate or latency figure has been measured on a named device</b> &mdash; which is exactly why no such number appears anywhere on this page.</li>
+            <li>Device acceptance tests for the two newest worlds have not been performed.</li>
+            <li>The television cannot show a child until one open architectural decision is answered.</li>
+            <li>No store listing, no pricing, and no date.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--cta" id="early">
+    <div class="wrap wrap--narrow">
+      <h2 class="h2 h2--center reveal">Be there when it moves</h2>
+      <p class="cta__lede reveal">Early access goes out to a small group first &mdash; families willing to prop a phone across the room and tell us what a real living room does to it. Leave an address and we will write when there is something to play, not before.</p>
+      <form class="signup reveal" id="signup" novalidate>
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required />
+        <button class="btn btn--solid" type="submit">Request early access</button>
+      </form>
+      <p class="signup__status" id="signup-status" role="status"></p>
+      <p class="note note--center reveal">One message when there is news. No list, no sharing, and nothing else sent to you.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <div class="foot__brand">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M32 27V39" /><path d="M32 30 18.5 17.5" /><path d="M32 30 45.5 17.5" />
+          <path d="M32 39 21 52.5" /><path d="M32 39 43 52.5" />
+        </g>
+        <circle cx="32" cy="15" r="6.5" fill="currentColor" />
+      </svg>
+      <div>
+        <p class="foot__word">Kidiverse</p>
+        <p class="foot__sub">A NexOma Labs product</p>
+      </div>
+    </div>
+    <nav class="foot__links" aria-label="Footer">
+      <a href="#loop">How it works</a>
+      <a href="#worlds">Worlds</a>
+      <a href="#camera">Privacy</a>
+      <a href="#status">Status</a>
+      <a href="https://www.nexomalabs.com">nexomalabs.com</a>
+    </nav>
+  </div>
+  <p class="foot__legal wrap">&copy; 2026 NexOma Labs. Kidiverse is in development; everything described here is subject to change before release.</p>
+</footer>
+
+<script src="main.js"></script>
