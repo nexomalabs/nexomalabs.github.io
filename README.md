@@ -54,16 +54,14 @@ No frameworks, no build pipeline, no runtime dependencies.
 │  └─ README.md              how to use the generator
 ├─ hundy/                    one directory per app
 │  ├─ app.json               source: name, tagline, support email, dates
-│  ├─ PRIVACY.md             source, also served raw
-│  ├─ TERMS.md               source, also served raw
-│  ├─ SUPPORT.md             source, also served raw
+│  ├─ PRIVACY.md             source, also served raw  (required)
+│  ├─ TERMS.md               source, also served raw  (required)
+│  ├─ FAQ.md                 source, also served raw  (optional)
 │  ├─ privacy.html           generated
 │  ├─ terms.html             generated
-│  ├─ support.html           generated
-│  └─ index.html             generated
-├─ fitly/                    same layout
-├─ habit-tracker/            same layout
-├─ kidivers/                 same layout
+│  ├─ faq.html               generated
+│  ├─ index.html             hand-written landing page, never overwritten
+│  └─ assets/                that app's own images
 └─ README.md
 ```
 

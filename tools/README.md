@@ -49,13 +49,19 @@ git commit -m "Update Hundy privacy policy"
 
 ```bash
 mkdir newapp
-cp fitly/app.json fitly/PRIVACY.md fitly/TERMS.md fitly/SUPPORT.md newapp/
-# edit newapp/app.json, then rewrite the app name inside the .md files
+cp hundy/app.json newapp/          # then edit every field
+$EDITOR newapp/PRIVACY.md          # write these yourself — see below
+$EDITOR newapp/TERMS.md
 python3 tools/build_docs.py
 ```
 
-`fitly/` is the fullest template. `hundy/` is the example to copy if you want a
-hand-built landing page and an FAQ instead of a SUPPORT page.
+**Write the documents yourself.** Do not copy another app's privacy policy and
+change the name: a privacy policy is a factual claim about what that specific
+app does with data, and an inherited one is usually wrong. `hundy/` is worth
+reading as an example of the shape and tone, not as text to reuse.
+
+`hundy/` also shows the optional pattern: a hand-written `index.html` landing
+page plus an `FAQ.md`, instead of the generated index and a `SUPPORT.md`.
 
 No list to update anywhere. The script discovers **any** directory at the
 repository root that contains an `app.json`, except the reserved names
