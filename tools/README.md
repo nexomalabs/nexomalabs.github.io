@@ -45,6 +45,16 @@ git commit -m "Update Hundy privacy policy"
 
 ---
 
+## Starting a new app from scratch
+
+`.github/prompts/app-store-documents.prompt.md` is a reusable prompt to run
+**inside that app's own repository**. It establishes the app's real data
+practices from its source, asks what the code cannot answer, then writes
+`PRIVACY.md`, `TERMS.md`, an FAQ or support page, `app.json` and a `THEME.md`
+brief ready to copy here.
+
+Use it rather than copying another app's documents — see the warning below.
+
 ## Everyday task: add a new app
 
 ```bash
