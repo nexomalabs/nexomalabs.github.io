@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Social card for https://www.nexomalabs.com/hundy/ — 1200x630.
+       Rasterise to og.png with the command in website/README.md. -->
+  <defs>
+    <radialGradient id="glow" cx="24%" cy="30%" r="64%">
+      <stop offset="0%" stop-color="#C9FF3C" stop-opacity="0.19"/>
+      <stop offset="100%" stop-color="#C9FF3C" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="74" height="74" patternUnits="userSpaceOnUse">
+      <path d="M74 0H0V74" fill="none" stroke="#F4F7FA" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="#07090B"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- the 100 mark, geometry from docs/ICONS.md -->
+  <g transform="translate(84 22) scale(0.118)">
+    <rect x="168.75" y="532.5" width="112.5" height="465" rx="56.25" fill="#C9FF3C"/>
+    <circle cx="573.75" cy="765" r="232.5" fill="#C9FF3C"/>
+    <circle cx="1098.75" cy="765" r="201.75" fill="none" stroke="#C9FF3C" stroke-width="61.5"
+            stroke-linecap="round" stroke-dasharray="1128.7,139"/>
+  </g>
+  <text x="264" y="126" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="40"
+        font-weight="700" fill="#F4F7FA" letter-spacing="-1">Hundy</text>
+  <text x="1116" y="122" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="20" font-weight="700" fill="#6C7885" letter-spacing="0.5">nexomalabs.com/hundy</text>
+
+  <text x="84" y="336" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="104"
+        font-weight="700" fill="#F4F7FA" letter-spacing="-4.5">Every rep</text>
+  <text x="84" y="444" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="104"
+        font-weight="700" fill="#C9FF3C" letter-spacing="-4.5">counts.</text>
+
+  <text x="84" y="512" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27"
+        font-weight="500" fill="#A6B1BD">Depth, lockout and body line — or it doesn’t count.</text>
+
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#6C7885">
+    <text x="84" y="578">NO ACCOUNT</text>
+    <text x="245" y="578" fill="#C9FF3C">·</text>
+    <text x="268" y="578">NO ADS</text>
+    <text x="371" y="578" fill="#C9FF3C">·</text>
+    <text x="394" y="578">NOTHING LEAVES YOUR PHONE</text>
+  </g>
+</svg>

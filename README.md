@@ -40,14 +40,30 @@ No frameworks, no build pipeline, no runtime dependencies.
 .
 ├─ index.html
 ├─ 404.html
-├─ sitemap.xml
-├─ .gitignore
+├─ CNAME                     www.nexomalabs.com
+├─ .nojekyll                 serve files byte-exact, no Jekyll processing
+├─ sitemap.xml               generated
 ├─ assets/
 │  ├─ style.css
 │  ├─ main.js
 │  ├─ banner.png
 │  ├─ Nexoma-logo.png
 │  └─ favicon.svg
+├─ tools/
+│  ├─ build_docs.py          Markdown -> HTML generator (stdlib only)
+│  └─ README.md              how to use the generator
+├─ hundy/                    one directory per app
+│  ├─ app.json               source: name, tagline, support email, dates
+│  ├─ PRIVACY.md             source, also served raw
+│  ├─ TERMS.md               source, also served raw
+│  ├─ SUPPORT.md             source, also served raw
+│  ├─ privacy.html           generated
+│  ├─ terms.html             generated
+│  ├─ support.html           generated
+│  └─ index.html             generated
+├─ fitly/                    same layout
+├─ habit-tracker/            same layout
+├─ kidivers/                 same layout
 └─ README.md
 ```
 
@@ -71,6 +87,46 @@ Then open:
 
 If you use the Live Server extension, right-click index.html and choose Open with Live Server.
 
+## App Documents (Privacy, Terms, Support)
+
+Each app has a directory at the site root holding its legal and support
+documents. The Markdown files are the **single source of truth**: they are
+served verbatim at their own URLs *and* rendered into styled HTML pages.
+
+### Published URLs
+
+For an app directory named `hundy`:
+
+| URL | File | Use |
+| --- | --- | --- |
+| `https://www.nexomalabs.com/hundy/privacy` | `privacy.html` | **App Store Connect privacy policy URL** |
+| `https://www.nexomalabs.com/hundy/support` | `support.html` | **App Store Connect support URL** |
+| `https://www.nexomalabs.com/hundy/terms` | `terms.html` | EULA / terms of service |
+| `https://www.nexomalabs.com/hundy/` | `index.html` | That app's document hub |
+| `https://www.nexomalabs.com/hundy/PRIVACY.md` | `PRIVACY.md` | Raw Markdown, for linking from app repos |
+
+Submit the **HTML** URLs to App Store Connect. A raw `.md` URL is served as
+plain Markdown source, which reviewers may see as unformatted text or as a file
+download.
+
+GitHub Pages resolves both `/hundy/privacy` and `/hundy/privacy.html`; prefer the
+extensionless form. Use the `www.` host — the apex domain 301-redirects to it.
+
+### Working with these documents
+
+The Markdown files are the single source of truth. After editing one, regenerate
+the HTML and commit both:
+
+```bash
+python3 tools/build_docs.py           # regenerate
+python3 tools/build_docs.py --check   # verify nothing is stale before committing
+```
+
+Never hand-edit the generated `*.html` files or `sitemap.xml`.
+
+**Full guide, including how to add a new app, the `app.json` schema, the
+supported Markdown subset and troubleshooting: [tools/README.md](tools/README.md).**
+
 ## Deployment
 
 ### GitHub Pages
@@ -92,7 +148,8 @@ After deployment, the site will be available at your GitHub Pages URL.
 - Visual system and responsive behavior: assets/style.css
 - Theme toggle, mobile menu, reveal animations: assets/main.js
 - Not found page: 404.html
-- Search crawler map: sitemap.xml
+- Search crawler map: sitemap.xml (generated — do not hand-edit)
+- App privacy/terms/support documents: the Markdown files in each app directory
 
 ## Branding and Messaging
 
