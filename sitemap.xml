@@ -7,6 +7,41 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.nexomalabs.com/fitly/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.nexomalabs.com/fitly/privacy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.nexomalabs.com/fitly/terms</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.nexomalabs.com/fitly/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.nexomalabs.com/fitly/safety</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.nexomalabs.com/fitly/subscription</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.nexomalabs.com/fitly/data-deletion</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.nexomalabs.com/hundy/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
