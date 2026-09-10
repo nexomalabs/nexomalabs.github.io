@@ -47,8 +47,9 @@ No frameworks, no build pipeline, no runtime dependencies.
 │  ├─ style.css
 │  ├─ main.js
 │  ├─ banner.png
-│  ├─ Nexoma-logo.png
-│  └─ favicon.svg
+│  ├─ Nexoma-logo.png       full lockup (mark + wordmark)
+│  ├─ logo.svg              the N mark, used in the site header
+│  └─ favicon.svg           the N mark on a dark plate
 ├─ tools/
 │  ├─ build_docs.py          Markdown -> HTML generator (stdlib only)
 │  └─ README.md              how to use the generator

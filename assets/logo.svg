@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 425 425" role="img" aria-label="Nexoma Labs">
+  <title>Nexoma Labs</title>
+  <defs>
+    <linearGradient id="nx-a" gradientUnits="userSpaceOnUse" x1="20.5" y1="20.5" x2="258" y2="258">
+      <stop offset="0" stop-color="#39D0FA" />
+      <stop offset="1" stop-color="#3A45DF" />
+    </linearGradient>
+    <linearGradient id="nx-b" gradientUnits="userSpaceOnUse" gradientTransform="rotate(180 212.5 212.5)" x1="157.1" y1="25.1" x2="466.9" y2="74.4">
+      <stop offset="0" stop-color="#3455DC" />
+      <stop offset="1" stop-color="#833BDE" />
+    </linearGradient>
+    <path id="nx-r" d="M0 52A52 52 0 0 1 52 0L66.5 0Q72.5 0 77.4 3.5L302 162L302 241.1L72.7 79.2Q67 75.2 67 82.2L67 358A67 67 0 0 1 0 425Z" />
+  </defs>
+  <use href="#nx-r" fill="url(#nx-a)" />
+  <use href="#nx-r" fill="url(#nx-b)" transform="rotate(180 212.5 212.5)" />
+</svg>
