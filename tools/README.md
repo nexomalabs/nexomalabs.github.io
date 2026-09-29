@@ -96,6 +96,8 @@ hundy/
 ├─ terms.html      GENERATED
 ├─ support.html    GENERATED  only if SUPPORT.md exists
 ├─ faq.html        GENERATED  only if FAQ.md exists
+├─ legal.html      GENERATED  only if LEGAL.md exists (a legal notice / Impressum)
+├─ licenses.html   GENERATED  only if LICENSES.md exists (open-source licences)
 ├─ index.html      GENERATED  unless you wrote your own — see below
 └─ assets/         YOURS      anything else in the folder is left alone
 ```
