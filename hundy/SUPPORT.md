@@ -2,7 +2,7 @@
 
 _How to get help with Hundy._
 
-**Last updated:** 2026-08-24
+**Last updated:** 2026-09-29
 
 Support for **Hundy**, published by Nexoma Labs. This page is the official support resource for the app.
 
@@ -39,7 +39,7 @@ Almost always a camera placement problem. Put the phone on the floor beside you 
 
 ### How do I delete my data?
 
-Settings → Data and privacy → Delete all data removes everything immediately and irreversibly. Uninstalling Hundy removes the same data. There is no copy anywhere else to request or delete — Hundy has no account, no backend and no cloud storage.
+Settings → Data and privacy → Delete all data removes everything immediately and irreversibly. Uninstalling Hundy removes the same data. We hold no copy to request or delete — Hundy has no account, no backend and no cloud storage. The only other place your history can exist is your own iCloud or Google device backup, which you manage in your account settings.
 
 ### I lost my data after changing devices. Can you recover it?
 
@@ -69,4 +69,4 @@ If you believe you have found a security vulnerability, email support@nexomalabs
 
 ---
 
-**Nexoma Labs** — <https://www.nexomalabs.com>
+**Nexoma Labs LLC** — <https://www.nexomalabs.com>

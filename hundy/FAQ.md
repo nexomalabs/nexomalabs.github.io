@@ -2,7 +2,7 @@
 
 _The questions people ask about camera-based rep counting._
 
-**Last updated:** 2026-08-24
+**Last updated:** 2026-09-29
 
 ## Does Hundy record or upload video?
 
@@ -50,7 +50,7 @@ The workout screen uses the front camera so you can see yourself and the trackin
 
 ## How do I delete everything?
 
-Settings → Data and privacy → Delete all data. It clears every workout, rep and setting from the device immediately. Deleting the app does the same thing.
+Settings → Data and privacy → Delete all data. It clears every workout, rep and setting from the device immediately. Deleting the app does the same thing. Nobody else holds a copy — the only other place your history can exist is a device backup of your own, in your iCloud or Google account.
 
 ## How do I get help, or send feedback?
 
