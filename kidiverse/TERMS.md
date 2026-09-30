@@ -2,7 +2,7 @@
 
 *What Kidiverse is, how to use it safely, and what we do and do not promise.*
 
-**Last updated:** September 29, 2026
+**Version:** 1.0 · **Effective:** September 29, 2026 · **Last updated:** September 29, 2026
 
 ## These terms
 

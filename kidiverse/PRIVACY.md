@@ -2,7 +2,7 @@
 
 *Kidiverse collects nothing about your child. This page explains exactly what that means.*
 
-**Last updated:** September 29, 2026
+**Version:** 1.0 · **Effective:** September 29, 2026 · **Last updated:** September 29, 2026
 
 ## The short version
 
