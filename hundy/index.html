@@ -110,6 +110,17 @@ p{margin:0}
 .btn-sm{padding:.72rem 1.35rem;font-size:.9rem}
 @media (prefers-reduced-motion:reduce){.btn:hover{transform:none}}
 
+/* ── Store badges ────────────────────────────────────────────── *
+   Official artwork from Apple and Google, shown unaltered at the same
+   height. Both stores ask for clear space of a quarter of the badge
+   height around it, which the 1rem gap provides. */
+.store{display:inline-flex;border-radius:9px;transition:transform .22s cubic-bezier(.2,.7,.3,1)}
+.store img{height:54px;width:auto}
+@media (max-width:420px){.store img{height:46px}}
+.store[hidden]{display:none}
+.store:hover{transform:translateY(-2px)}
+@media (prefers-reduced-motion:reduce){.store:hover{transform:none}}
+
 /* ── Hero ────────────────────────────────────────────────────── */
 .hero{position:relative;padding:clamp(3.5rem,8vw,6rem) 0 clamp(4rem,9vw,7rem);overflow:hidden}
 .hero::before{
@@ -130,7 +141,7 @@ p{margin:0}
   .hero .eyebrow{justify-content:center}.hero .lede{margin-inline:auto}}
 .hero h1{font-size:clamp(3rem,8.4vw,5.6rem);line-height:.94;letter-spacing:-.045em}
 .hero h1 em{font-style:normal;color:var(--energy);display:block}
-.hero-cta{display:flex;gap:.85rem;flex-wrap:wrap;margin-top:2.4rem}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-top:2.4rem}
 @media (max-width:940px){.hero-cta{justify-content:center}}
 .hero-note{margin-top:1.15rem;font-size:.86rem;color:var(--text-faint)}
 
@@ -362,7 +373,7 @@ details .a{padding:0 1.5rem 1.4rem;color:var(--text-muted);font-size:.95rem;max-
       <li><a href="#privacy">Privacy</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
-    <a class="btn btn-primary btn-sm" href="mailto:hundy@nexomalabs.com?subject=Notify%20me%20when%20Hundy%20launches">Get notified</a>
+    <a class="btn btn-primary btn-sm" href="https://apps.apple.com/us/app/hundy-push-up-counter/id6806351924" rel="noopener">Download</a>
   </nav>
 </header>
 
@@ -380,15 +391,17 @@ details .a{padding:0 1.5rem 1.4rem;color:var(--text-muted);font-size:.95rem;max-
         movement, or it doesn't count.
       </p>
       <div class="hero-cta reveal d3">
-        <a class="btn btn-primary" href="mailto:hundy@nexomalabs.com?subject=Notify%20me%20when%20Hundy%20launches">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
-            <path d="M12 3v13"/><path d="m7 12 5 5 5-5"/><path d="M5 21h14"/>
-          </svg>
-          Coming to the App Store
+        <a class="store" href="https://apps.apple.com/us/app/hundy-push-up-counter/id6806351924" rel="noopener">
+          <img src="assets/badges/app-store.svg" width="120" height="40" alt="Download on the App Store">
+        </a>
+        <!-- Google Play: replace PACKAGE_NAME with the Android application ID and remove
+             "hidden" once the listing is live. The same switch is in the hero and final CTA. -->
+        <a class="store" href="https://play.google.com/store/apps/details?id=PACKAGE_NAME" rel="noopener" hidden>
+          <img src="assets/badges/google-play.png" width="181" height="54" alt="Get it on Google Play">
         </a>
         <a class="btn btn-ghost" href="#how">See how it counts</a>
       </div>
-      <p class="hero-note reveal d4">Free. No account. No ads. iPhone first.</p>
+      <p class="hero-note reveal d4">Free on iPhone. No account. No ads. Android coming soon.</p>
     </div>
 
     <div class="hero-stage reveal d2">
@@ -704,14 +717,16 @@ details .a{padding:0 1.5rem 1.4rem;color:var(--text-muted);font-size:.95rem;max-
       At the end of the month, look at the total. Every rep in it is one you actually did.
     </p>
     <div class="hero-cta reveal d3" style="justify-content:center">
-      <a class="btn btn-primary" href="mailto:hundy@nexomalabs.com?subject=Notify%20me%20when%20Hundy%20launches">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true">
-          <path d="M12 3v13"/><path d="m7 12 5 5 5-5"/><path d="M5 21h14"/>
-        </svg>
-        Tell me when it launches
+      <a class="store" href="https://apps.apple.com/us/app/hundy-push-up-counter/id6806351924" rel="noopener">
+        <img src="assets/badges/app-store.svg" width="120" height="40" alt="Download on the App Store">
+      </a>
+      <!-- Google Play: replace PACKAGE_NAME with the Android application ID and remove
+           "hidden" once the listing is live. The same switch is in the hero and final CTA. -->
+      <a class="store" href="https://play.google.com/store/apps/details?id=PACKAGE_NAME" rel="noopener" hidden>
+        <img src="assets/badges/google-play.png" width="181" height="54" alt="Get it on Google Play">
       </a>
     </div>
-    <p class="hero-note reveal d4">Opens your mail app. Nothing is sent until you press send.</p>
+    <p class="hero-note reveal d4">Free on iPhone. Android coming soon.</p>
   </div>
 </section>
 

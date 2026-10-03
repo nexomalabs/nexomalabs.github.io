@@ -890,3 +890,67 @@ a { color: inherit; }
   }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* --- the mascot ----------------------------------------------------------- */
+/* The host of every screen in the app, so it is the host here too: waving in the hero,
+   at the edge of each world's art, and in a section of its own. It never covers the
+   words — in the app it never covers the child. */
+.hero__mascot {
+  position: absolute;
+  right: clamp(12px, 2vw, 40px);
+  bottom: clamp(16px, 4vh, 48px);
+  height: min(46vh, 460px);
+  width: auto;
+  z-index: 0;
+  filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.45));
+  pointer-events: none;
+}
+.hero__inner { position: relative; z-index: 1; }
+/* The headline is capped a little below its old size so it clears the mascot. */
+.hero__title { font-size: clamp(2.7rem, 7.2vw, 5.8rem); }
+@media (max-width: 1100px) { .hero__mascot { height: min(34vh, 300px); } }
+@media (max-width: 760px) { .hero__mascot { display: none; } }
+
+.world__mascot {
+  position: absolute;
+  right: 3%;
+  bottom: 0;
+  height: 46%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.4));
+  pointer-events: none;
+}
+.world__art img.world__mascot { width: auto; height: 46%; }
+
+.meet {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(24px, 5vw, 64px);
+  align-items: center;
+  margin-top: 28px;
+}
+@media (max-width: 860px) { .meet { grid-template-columns: 1fr; } }
+.poses {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+.poses li {
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 14px 8px 8px;
+  display: flex;
+  justify-content: center;
+}
+.poses img { height: clamp(110px, 16vw, 200px); width: auto; }
+@media (max-width: 520px) { .poses { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.foot__docs { margin-top: 18px; width: 100%; }
+.foot__docs a { font-size: 0.8125rem; }
+.foot__legal a { color: inherit; }

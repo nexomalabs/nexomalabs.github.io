@@ -1,13 +1,18 @@
-<title>Kidiverse</title>
+<!doctype html>
+<html lang="en">
+<head>
 <meta charset="utf-8" />
+<title>Kidiverse — your child's body is the controller</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Kidiverse turns a phone propped across the room into a camera that watches a child move, and a world that answers. Camera-driven active play on hardware already in the house. In development at NexOma Labs." />
+<meta name="description" content="Kidiverse turns a phone propped across the room into a game a child plays with their whole body. A drawn character copies them, and five worlds answer. Nothing is recorded, saved or sent. In development at Nexoma Labs." />
 <meta name="theme-color" content="#0A1422" />
 <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml" />
-<link rel="apple-touch-icon" href="assets/brand/app-icon.svg" />
+<link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="assets/brand/favicon-192.png" sizes="192x192" type="image/png" />
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Kidiverse — your child's body is the controller" />
-<meta property="og:description" content="Arms up gathers the storm. A sweep drives the wind. A jump forks the lightning. Camera-driven active play on the phone you already own." />
+<meta property="og:description" content="Arms up gathers the storm. Point, and a comet flies. Jump, and the dinosaurs feel it. Five worlds a child plays with their whole body, on the phone you already own." />
 <!-- Absolute, because link scrapers do not resolve relative paths. If the site is
      published anywhere other than the URL below, change these three lines. -->
 <link rel="canonical" href="https://www.nexomalabs.com/kidiverse/" />
@@ -18,6 +23,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,300..600&display=swap" />
 <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
 <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -77,8 +84,9 @@
     <a href="#loop">How it works</a>
     <a href="#demo">Demo</a>
     <a href="#worlds">Worlds</a>
+    <a href="#mascot">Mascot</a>
     <a href="#camera">Privacy</a>
-    <a href="#status">Status</a>
+    <a href="faq">Help</a>
   </nav>
   <div class="nav__actions">
     <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to clear sky">
@@ -92,17 +100,18 @@
   <section class="hero" id="top">
     <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
     <div class="hero__scrim" aria-hidden="true"></div>
+    <img class="hero__mascot" src="assets/mascot/wave.webp" alt="The Kidiverse mascot, a small white robot with a leaf sprout and a red heart, waving" width="474" height="640" />
     <div class="hero__inner">
       <p class="eyebrow">NexOma Labs · Camera-driven active play</p>
       <h1 class="hero__title">Your child&rsquo;s body<br />is the controller</h1>
       <p class="hero__line">Arms up, and the sky answers.</p>
-      <p class="hero__lede">A phone propped across the room watches a child move, and a world moves back. Arms overhead gather the storm. A sweep drives the wind sideways. A jump forks the lightning. No headset, no console, no new hardware &mdash; the camera is already in the house.</p>
+      <p class="hero__lede">A phone propped across the room watches a child move, a drawn character copies them, and a world moves back. Arms overhead gather the storm. A pointed arm sends a comet across space. A jump shakes the valley under the dinosaurs. No headset, no console, no new hardware &mdash; the camera is already in the house, and nothing it sees is recorded, saved or sent.</p>
       <div class="hero__cta">
         <a class="btn btn--solid" href="#early">Join the early access list</a>
         <a class="btn btn--ghost" href="#demo">Move the sky &darr;</a>
       </div>
       <ul class="chips" aria-label="Current status">
-        <li class="chip">Three worlds built</li>
+        <li class="chip">Five worlds built</li>
         <li class="chip">Running on iPhone</li>
         <li class="chip chip--open">Android gate not yet passed</li>
       </ul>
@@ -239,26 +248,26 @@
   <section class="band" id="worlds">
     <div class="wrap">
       <p class="eyebrow reveal">The library</p>
-      <h2 class="h2 reveal">Three worlds, one engine</h2>
+      <h2 class="h2 reveal">Five worlds, one engine</h2>
       <div class="measure reveal">
-        <p>Worlds two and three were built on the framework the first world earned. Same gesture recognition, same framing, same session lifecycle &mdash; different meaning.</p>
+        <p>Every world after the first was built on the framework the first one earned. Same gesture recognition, same framing, same session lifecycle &mdash; different meaning. In each one the mascot waits at the edge, so the middle of the screen always belongs to the child.</p>
       </div>
     </div>
     <div class="worlds">
       <article class="world reveal">
-        <div class="world__art"><img src="assets/worlds/valley-open.jpg" alt="A flat-vector jungle valley under an open sky, the setting for Weather Control" loading="lazy" width="1600" height="899" /></div>
+        <div class="world__art"><img src="assets/worlds/weather-day.jpg" alt="A flat-vector jungle clearing under an open sky, the setting for Weather" loading="lazy" width="1600" height="899" /><img class="world__mascot" src="assets/mascot/umbrella.webp" alt="" loading="lazy" width="500" height="640" /></div>
         <div class="world__body">
           <p class="eyebrow">World one</p>
-          <h3>Weather Control</h3>
-          <p>A valley, a sky, and a child who owns it. Arms overhead gather cloud until it is heavy enough to rain. A sweep takes the rain sideways. A jump cracks thunder. Arms lowered and spread bring the sun back.</p>
-          <p class="world__note">The child sees themselves inside the scene, cut out from the room behind them.</p>
+          <h3>Weather</h3>
+          <p>A valley, a sky, and a child who owns it. Arms overhead gather cloud until it is heavy enough to rain. A sweep takes the rain sideways. A jump cracks thunder. Arms lowered and spread bring the sun back &mdash; and on a timer, night falls and the same moves mean something new.</p>
+          <p class="world__note">The child plays as a drawn character that copies them. Their own picture is never put on the screen.</p>
         </div>
       </article>
       <article class="world world--flip reveal">
-        <div class="world__art"><img src="assets/worlds/valley-palms.jpg" alt="A deeper jungle valley framed by palms, the setting for Weather Control 2" loading="lazy" width="1600" height="899" /></div>
+        <div class="world__art"><img src="assets/worlds/valley-palms.jpg" alt="A deeper jungle valley framed by palms, the setting for Sky" loading="lazy" width="1600" height="899" /><img class="world__mascot" src="assets/mascot/kite.webp" alt="" loading="lazy" width="574" height="640" /></div>
         <div class="world__body">
-          <p class="eyebrow">World three</p>
-          <h3>Weather Control 2</h3>
+          <p class="eyebrow">World two</p>
+          <h3>Sky</h3>
           <p>The child stands inside a sky and drives it. Spin a hand and a funnel winds up beside it. Sweep and the wind takes the rain sideways. Jump inside a storm you built yourself and it forks lightning.</p>
           <p class="world__note">The tornado has a home in the scene whether or not it can find your hand &mdash; which is why a television with no body data can still draw it correctly.</p>
         </div>
@@ -274,16 +283,54 @@
           </div>
         </div>
         <div class="world__body">
-          <p class="eyebrow">World two</p>
-          <h3>Human Anatomy</h3>
+          <p class="eyebrow">World three</p>
+          <h3>My Body</h3>
           <p>A child stands in front of the camera and an anatomical figure moves with them. They press Skeleton, Muscles, Organs or Full Body, and the same tracked movement is shown through a different layer of the body.</p>
           <p class="world__note">Reach, crouch and turn cross into the world as meaning. Joint coordinates never do.</p>
+        </div>
+      </article>
+      <article class="world world--flip reveal">
+        <div class="world__art"><img src="assets/worlds/space.jpg" alt="A deep-space scene of stars, nebulae and ringed planets, the setting for Space" loading="lazy" width="1600" height="899" /><img class="world__mascot" src="assets/mascot/wave.webp" alt="" loading="lazy" width="474" height="640" /></div>
+        <div class="world__body">
+          <p class="eyebrow">World four</p>
+          <h3>Space</h3>
+          <p>The child has powers in space. Point, and a comet flies from their hand. Swipe, and the asteroids are shoved aside. Raise both hands and a cosmic storm lights up the stars and spirals around them. Open their arms, and a portal opens behind them.</p>
+          <p class="world__note">Every hand leaves a trail of star-light, and the stars and the dust lean toward it.</p>
+        </div>
+      </article>
+      <article class="world reveal">
+        <div class="world__art"><img src="assets/worlds/dinosaur-valley.jpg" alt="A prehistoric valley of ferns, a winding path and tall rock spires, the setting for Dinosaurs" loading="lazy" width="1600" height="899" /><img class="world__mascot" src="assets/mascot/beckon.webp" alt="" loading="lazy" width="391" height="640" /></div>
+        <div class="world__body">
+          <p class="eyebrow">World five</p>
+          <h3>Dinosaurs</h3>
+          <p>A prehistoric valley whose creatures answer the child. Walk and glowing footprints follow. Raise both arms and a dinosaur far off calls back. Jump and the ground stomps. Hold both hands out and a gentle giant lowers its long neck to eat from them &mdash; and the eggs under their feet rock, crack and hatch.</p>
+          <p class="world__note">No full-screen flash in this world or in Space, so the three-a-second lightning limit has nothing to hold back.</p>
         </div>
       </article>
     </div>
   </section>
 
-  <section class="band band--tint" id="profiles">
+  <section class="band band--tint" id="mascot">
+    <div class="wrap">
+      <p class="eyebrow reveal">Meet the host</p>
+      <h2 class="h2 reveal">A friend at the edge of every world</h2>
+      <div class="meet">
+        <div class="measure reveal">
+          <p>Kidiverse has a mascot: a small robot with a leaf sprout and a heart. It waves a child in on the first screen, shows each world&rsquo;s moves before play in pictures rather than words, and cheers when a game is done.</p>
+          <p>Inside a world it keeps to the edges &mdash; holding an umbrella in the storm, flying a kite in the sky, peering through a magnifier at the body &mdash; because the middle of the screen belongs to the child.</p>
+          <p>And a child can play <em>as</em> it. The character that copies them on screen is a stick figure, the mascot, or a skeleton. It is never their own picture.</p>
+        </div>
+        <ul class="poses reveal" aria-label="Some of the mascot's poses">
+          <li><img src="assets/mascot/cheer.webp" alt="The mascot cheering, arms up" loading="lazy" width="527" height="640" /></li>
+          <li><img src="assets/mascot/umbrella.webp" alt="The mascot holding an umbrella" loading="lazy" width="500" height="640" /></li>
+          <li><img src="assets/mascot/magnifier.webp" alt="The mascot looking through a magnifying glass" loading="lazy" width="385" height="640" /></li>
+          <li><img src="assets/mascot/kite.webp" alt="The mascot flying a kite" loading="lazy" width="574" height="640" /></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="profiles">
     <div class="wrap">
       <p class="eyebrow reveal">Growing with the child</p>
       <h2 class="h2 reveal">One build, three ways to play</h2>
@@ -316,7 +363,7 @@
         <div class="measure reveal">
           <p>Putting the world on the television is not a cosmetic upgrade. The child looks at a big screen at a natural playing distance instead of squinting at a propped phone, the phone is freed to be a dedicated sensor rather than sensor and display at once, and a shared screen is the only sensible surface for two children playing together.</p>
           <p>It also puts the parent&rsquo;s controls on the device the parent is already holding.</p>
-          <p class="callout">Camera frames and raw body data never leave the phone. Only the world&rsquo;s own state crosses your network &mdash; and it never reaches the internet.</p>
+          <p class="callout">The television shows the game, not your child. Camera frames and raw body data never leave the phone. Only the world&rsquo;s own state crosses your network &mdash; and it never reaches the internet.</p>
         </div>
         <div class="wire reveal" aria-hidden="true">
           <div class="wire__node wire__node--phone">
@@ -330,7 +377,7 @@
           </div>
         </div>
       </div>
-      <p class="note reveal">Designed and partly built. It cannot show a child yet &mdash; one decision about how imagery reaches the second screen is deliberately still open, and it is being answered in the order that keeps the privacy claim intact.</p>
+      <p class="note reveal">Designed and partly built, for testing only. It is not in the version families install.</p>
     </div>
   </section>
 
@@ -343,27 +390,28 @@
       </div>
       <div class="disclosures">
         <div class="disc reveal">
-          <h3>Your child plays by moving, and they see themselves in the game.</h3>
-          <p>Kidiverse uses the camera to follow your child&rsquo;s body &mdash; arms, legs, how they move &mdash; and to cut their picture out of the room so they appear inside the game world. That picture is the point of the game: they raise their arms and see themselves raise the storm.</p>
+          <h3>Your child plays by moving, and a character on screen moves with them.</h3>
+          <p>Kidiverse uses the camera to follow your child&rsquo;s body &mdash; arms, legs, how they move &mdash; and a drawn character copies them: a stick figure, our mascot, or a skeleton. Their picture is never put on the screen. The camera sees the whole room, as any camera does, and this phone uses what it sees, moment to moment, to follow the movement.</p>
         </div>
         <div class="disc reveal">
-          <h3>Anyone the camera can see appears on screen, not just the child playing.</h3>
-          <p>The camera cannot tell one person from another. It separates people from the room behind them, so anybody who walks into view appears in the game too. The only way not to appear is to stay out of the camera&rsquo;s view.</p>
+          <h3>If someone else walks into view, the character may follow them instead.</h3>
+          <p>The camera cannot tell one person from another. It follows one body at a time, so a grown-up or a brother or sister walking past can take over the character for a moment. Their picture is not shown either. To leave the game to your child, stay out of the camera&rsquo;s view.</p>
         </div>
         <div class="disc reveal">
           <h3>Nothing is recorded. Nothing is saved. Nothing is sent anywhere.</h3>
-          <p>The picture is shown on the screen and then it is gone. There is no recording, no photo, no video file, and nothing is uploaded to us or to anyone else. Closing the app leaves nothing behind.</p>
+          <p>What the camera sees is used on this phone and then it is gone. There is no recording, no photo, no video file, and nothing is uploaded to us or to anyone else. Closing the app leaves nothing behind.</p>
         </div>
         <div class="disc reveal">
           <h3>You can say no, and you can stop at any time.</h3>
-          <p>If you decline the camera, Kidiverse cannot run &mdash; the whole game is your child moving. Nothing else changes, and you can grant it later from your device settings.</p>
+          <p>If you decline the camera, Kidiverse cannot run &mdash; the whole game is your child moving. Nothing else in the app changes, and you can grant it later from your device settings.</p>
         </div>
       </div>
       <ul class="commitments reveal">
         <li><b>Processed on the phone.</b> There is no cloud vision pipeline, now or later.</li>
         <li><b>Pose and hand landmarks only.</b> No face geometry, no face mesh, no templates, and no facial recognition of any kind. Settled, not deferred.</li>
-        <li><b>No accounts, no ads, no third-party analytics.</b> Built for the terms Apple&rsquo;s Kids Category sets, which hold for every future update once you opt in.</li>
+        <li><b>No accounts, no third-party analytics, nothing to buy.</b> Settings, these documents and every link out of the app sit behind a parental gate a young child cannot answer.</li>
         <li><b>Head points are discarded before they reach the game.</b> Not filtered later &mdash; they never cross out of the tracker.</li>
+        <li><b>The full details are in the <a href="privacy">Privacy Policy</a>.</b> Written for parents, with a short version a child can read.</li>
         <li><b>The shipping build cannot contain the tools we test with.</b> Observer surfaces and the network transport are resolved out of it, so &ldquo;no code path capable of transmitting camera imagery exists&rdquo; is something an inspector can verify by reading the build, not a promise about intent.</li>
       </ul>
     </div>
@@ -380,7 +428,10 @@
         <div class="status__col reveal">
           <h3 class="status__h status__h--yes">Built and tested</h3>
           <ul>
-            <li>Three worlds on one shared scene framework.</li>
+            <li>Five worlds on one shared scene framework: Weather, My Body, Sky, Space and Dinosaurs.</li>
+            <li>A drawn character that copies the child &mdash; a stick figure, the mascot or a skeleton &mdash; so no child&rsquo;s picture is ever shown.</li>
+            <li>The mascot, and a move guide that shows each world&rsquo;s moves in pictures before play.</li>
+            <li>A parental gate in front of the settings, the privacy policy, the terms and help.</li>
             <li>Gesture recognition with declared confirmation windows, refractory periods and deterministic arbitration when two gestures fire at once.</li>
             <li>Framing and onboarding &mdash; the &ldquo;step back until you fit&rdquo; moment treated as a designed feature rather than setup friction.</li>
             <li>The parent-facing camera explanation, with a test that scans the whole repository for wording that has been ruled misleading.</li>
@@ -393,8 +444,8 @@
           <ul>
             <li><b>It has never run on the target Android device.</b> Android is a gate, not a port, and that gate has not been passed.</li>
             <li><b>No frame rate or latency figure has been measured on a named device</b> &mdash; which is exactly why no such number appears anywhere on this page.</li>
-            <li>Device acceptance tests for the two newest worlds have not been performed.</li>
-            <li>The television cannot show a child until one open architectural decision is answered.</li>
+            <li>Device acceptance tests for the newest worlds, Space and Dinosaurs, have not been performed.</li>
+            <li>The television build is for testing only.</li>
             <li>No store listing, no pricing, and no date.</li>
           </ul>
         </div>
@@ -439,8 +490,19 @@
       <a href="#status">Status</a>
       <a href="https://www.nexomalabs.com">nexomalabs.com</a>
     </nav>
+    <nav class="foot__links foot__docs" aria-label="Documents">
+      <a href="privacy">Privacy Policy</a>
+      <a href="terms">Terms of Use</a>
+      <a href="faq">Help and FAQ</a>
+      <a href="support">Contact</a>
+      <a href="safety">Playing safely</a>
+      <a href="legal">Legal notice</a>
+      <a href="licenses">Open-source licences</a>
+    </nav>
   </div>
-  <p class="foot__legal wrap">&copy; 2026 NexOma Labs. Kidiverse is in development; everything described here is subject to change before release.</p>
+  <p class="foot__legal wrap">&copy; 2026 Nexoma Labs LLC. Kidiverse is in development; everything described here is subject to change before release. Questions: <a href="mailto:support@nexomalabs.com">support@nexomalabs.com</a></p>
 </footer>
 
 <script src="main.js"></script>
+</body>
+</html>

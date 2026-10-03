@@ -36,6 +36,8 @@ DOC_TYPES = [
     ("SAFETY.md", "safety.html", "Community Safety", "Safety"),
     ("SUBSCRIPTION.md", "subscription.html", "Subscription Terms", "Subscription"),
     ("DATA-DELETION.md", "data-deletion.html", "Data Deletion", "Data deletion"),
+    ("LEGAL.md", "legal.html", "Legal Notice", "Legal notice"),
+    ("LICENSES.md", "licenses.html", "Open-Source Licences", "Licences"),
 ]
 
 # An app must publish at least these; the other DOC_TYPES are optional and are
@@ -512,6 +514,8 @@ DOC_BLURBS = {
     "SAFETY.md": "Community rules and how to stay safe when meeting other users.",
     "SUBSCRIPTION.md": "What a subscription includes, and how to cancel it.",
     "DATA-DELETION.md": "How to delete your account and everything attached to it.",
+    "LEGAL.md": "Who publishes the app, and how to reach them.",
+    "LICENSES.md": "The open-source software the app is built with, and its licences.",
 }
 
 
