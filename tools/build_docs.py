@@ -19,6 +19,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import mimetypes
 import re
 import sys
 from datetime import date
@@ -55,6 +56,9 @@ THEME_CSS = "assets/docs.css"
 # An app's brand mark, inlined so it paints before the stylesheet loads.
 # Read from <app>/assets/brand.svg; an app without one simply has no mark.
 BRAND_FILE = "assets/brand.svg"
+
+# The tab icon of a themed app, unless app.json names its own "icon".
+FAVICON_FILE = "assets/favicon.svg"
 
 # Directories that are part of the site chrome, never app doc folders.
 RESERVED_DIRS = {"assets", "tools", ".git", ".github"}
@@ -268,7 +272,7 @@ def head(
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{canonical}" />
 {og_image}  <link rel="canonical" href="{canonical}" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="{app['favicon']}" type="{app['favicon_type']}" />
   <link rel="stylesheet" href="assets/docs.css" />
 </head>
 <body>
@@ -587,8 +591,22 @@ def discover_apps() -> list[dict]:
         app["path"] = path
         app["short_name"] = app.get("short_name") or app["name"]
         app["themed"] = (path / THEME_CSS).exists()
+        # An "icon" in app.json (an image file relative to the app directory)
+        # is both the tab icon and the brand mark, in place of the SVG files.
+        icon = str(app.get("icon", "")).strip()
+        if icon and not (path / icon).exists():
+            raise ManifestError(f"{rel} names an icon that does not exist: {icon}")
+        app["favicon"] = icon or FAVICON_FILE
+        app["favicon_type"] = (
+            mimetypes.guess_type(app["favicon"])[0] or "image/svg+xml"
+        )
         mark = path / BRAND_FILE
-        if mark.exists():
+        if icon:
+            app["brand_mark"] = (
+                f'<img src="{html.escape(icon, quote=True)}" alt="" '
+                f'width="32" height="32" />'
+            )
+        elif mark.exists():
             svg = mark.read_text(encoding="utf-8")
             svg = re.sub(r"<\?xml[^>]*\?>", "", svg).strip()
             # Strip width/height from the ROOT <svg> tag only, so CSS sizes
@@ -642,7 +660,7 @@ def main() -> int:
             stale.append(target)
             return
         target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(content, encoding="utf-8")
+        target.write_text(content, encoding="utf-8", newline="\n")
         written.append(target)
 
     for app in apps:

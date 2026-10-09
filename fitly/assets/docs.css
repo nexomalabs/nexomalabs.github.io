@@ -87,7 +87,8 @@ body {
   margin-right: auto;
 }
 
-.brand svg { width: 32px; height: 32px; flex: none; border-radius: 9px; }
+.brand svg,
+.brand img { width: 32px; height: 32px; flex: none; border-radius: 9px; }
 
 .nav-links { display: flex; gap: 1.3rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
 

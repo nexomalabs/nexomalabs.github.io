@@ -159,9 +159,10 @@ The classes the generator emits, and which a theme therefore needs to style:
 Two optional `app.json` keys feed the themed chrome: `tagline` becomes the
 footer blurb, and `footer_note` the small print on the bottom right.
 
-The brand mark is currently the Hundy glyph, inlined as `BRAND_MARK` in
-`build_docs.py`. A second themed app needs that made per-app — read it from
-`<app>/assets/brand.svg`, for instance.
+The brand mark beside the app name is `<app>/assets/brand.svg`, inlined into
+the header and footer; the tab icon is `<app>/assets/favicon.svg`. An app whose
+icon is an image instead names it with the optional `icon` key, which then
+serves as both (Fitly does this with `assets/fitly-app-icon.png`).
 
 ### Your own titles and dates win
 
@@ -191,6 +192,7 @@ Optional keys:
 | Key | Appears | Example |
 | --- | --- | --- |
 | `footer_note` | Bottom-right small print, themed pages only | `"Hundy is a training tool, not a medical device."` |
+| `icon` | Tab icon and header/footer brand mark, themed pages only; a path inside the app directory, in place of `brand.svg` and `favicon.svg` | `"assets/fitly-app-icon.png"` |
 
 Dates are free text and are printed verbatim — they are not parsed, so keep the
 format consistent by hand. They are **not** read from the Markdown; the
