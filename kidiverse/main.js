@@ -13,14 +13,6 @@
    ========================================================================== */
 'use strict';
 
-/**
- * Where the early-access form posts. Empty means "no endpoint yet", and the form
- * falls back to opening a pre-filled message to the address below — which works
- * today, on a static host, with nothing to run server-side.
- */
-const EARLY_ACCESS_ENDPOINT = '';
-const EARLY_ACCESS_EMAIL = 'hello@nexomalabs.com';
-
 const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* --- theme ---------------------------------------------------------------- */
@@ -97,47 +89,6 @@ const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     { rootMargin: '0px 0px -12% 0px', threshold: 0.12 }
   );
   targets.forEach((el) => io.observe(el));
-})();
-
-/* --- early access --------------------------------------------------------- */
-(function signup() {
-  const form = document.getElementById('signup');
-  const status = document.getElementById('signup-status');
-  if (!form || !status) return;
-
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const field = form.querySelector('input[type="email"]');
-    const value = (field.value || '').trim();
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
-      status.textContent = 'That address looks incomplete — check it and try again.';
-      field.focus();
-      return;
-    }
-
-    if (EARLY_ACCESS_ENDPOINT) {
-      status.textContent = 'Sending…';
-      fetch(EARLY_ACCESS_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: value, source: 'kidiverse-site' }),
-      })
-        .then((res) => {
-          if (!res.ok) throw new Error(String(res.status));
-          form.reset();
-          status.textContent = 'You are on the list. We will write when there is something to play.';
-        })
-        .catch(() => {
-          status.textContent = `That did not go through. Write to ${EARLY_ACCESS_EMAIL} instead.`;
-        });
-      return;
-    }
-
-    const subject = encodeURIComponent('Kidiverse early access');
-    const body = encodeURIComponent(`Please add ${value} to the Kidiverse early access list.`);
-    window.location.href = `mailto:${EARLY_ACCESS_EMAIL}?subject=${subject}&body=${body}`;
-    status.textContent = 'Opening your mail app — send the message and you are on the list.';
-  });
 })();
 
 /* --- shared canvas helpers ------------------------------------------------ */

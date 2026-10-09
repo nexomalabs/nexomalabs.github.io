@@ -2,13 +2,17 @@
 
 *Answers to what parents actually ask about Kidiverse, and how to reach us.*
 
-**Last updated:** September 29, 2026
+**Last updated:** October 9, 2026
 
 ## What is Kidiverse?
 
 A game your child plays by moving. They stand in front of the phone, a drawn character copies them, and the worlds respond to what they do — raise both arms and clouds gather, sweep an arm and the wind blows, jump and lightning strikes.
 
-There is no controller, no buttons to press during play, and nothing to read.
+There is no controller, no buttons to press during play, and nothing to read. There are eight worlds to choose from on the map: Weather, My Body, Lab, Space, Dinosaurs, Under the Sea, Desert and Snow.
+
+## Where can I get it?
+
+Kidiverse is free on [Google Play](https://play.google.com/store/apps/details?id=com.nexomalabs.kidiverse) for Android phones. The iPhone version is coming soon to the App Store.
 
 ## What do I need to set it up?
 
@@ -24,7 +28,7 @@ The parts written in sentences — these pages and the settings — are for you.
 
 ## What does the camera actually do?
 
-It follows how your child is moving, and a drawn character — a stick figure, our mascot, or a skeleton — copies them. Their picture is never put on the screen, and nothing is recorded, saved or uploaded.
+It follows how your child is moving, and a drawn character copies them: a stick figure, our mascot, one of a cast of drawn characters your child chooses, or, in My Body, a skeleton. Their picture is never put on the screen, and nothing the camera sees is recorded, saved or uploaded.
 
 The full explanation is in the [Privacy Policy](privacy), and Kidiverse shows you the same explanation before your device ever asks for camera permission. You can read it again at any time under What the camera does, in the app’s Settings.
 
@@ -38,13 +42,31 @@ No. There is no video file, no photo, no screenshot and no upload. The part of K
 
 ## How do I get to the settings?
 
-Tap the small gear in the top corner of the first screen. Kidiverse asks you a two-digit multiplication and you type the answer. A child tapping numbers gets three tries, then has to wait, and the wait grows each time. If you mistype it, wait for the lock to pass and try again — it is never permanent.
+Tap the small gear in the top corner of the first screen. Kidiverse asks you a multiplication question, such as 7 × 8, and you type the answer on a keypad. A child tapping numbers gets three tries, then has to wait, and the wait grows each time. If you mistype it, wait for the lock to pass and try again — it is never permanent.
 
 The gate closes again when you leave the settings, so there is nothing to tidy up before handing the phone back.
+
+## Does my child need to run or move fast?
+
+No, and they must not. Kidiverse is a game for learning and fun, not a sport, a race or an action game. Every move is made calmly in one spot in front of the phone: marching on the spot, a small hop, a crouch, a reach, or a single step to the side. Nothing is gained by moving faster, and a missed obstacle simply comes round again.
+
+Before every game, clear an open space of at least 2 metres (about 6 feet) around your child, and stay in the room watching while they play. If your child starts running or moving wildly, stop the game. The full rules are in [Playing safely](safety).
 
 ## How does my child stop playing?
 
 The round stop button in the corner ends play, and the back button returns to the first screen. Kidiverse never requires a child to keep moving.
+
+## What are the stars?
+
+Your child earns stars for doing what each world asks: a star for each move the first time they make it in a round, two for each challenge met, and a bonus for doing every move and challenge, and for playing a round to its end. Stars only go up. There is no penalty, no streak to lose, and no comparison with anyone.
+
+The stars are kept on your device and nowhere else. To start again from zero, open Settings and choose Clear stars.
+
+## Can we play on the TV?
+
+Yes, with your phone’s own screen mirroring: AirPlay on an iPhone, or Cast, Screen cast or Smart View on Android. Tap the TV button on the first screen and Kidiverse shows the steps for your phone. You need a TV that supports it, on the same Wi-Fi as the phone. Start mirroring, then stand the phone in landscape just below the TV, facing your child, and have them step back until their whole body fits.
+
+The TV shows exactly what the phone shows: the drawn character, never your child’s camera picture. Your phone does the mirroring; Kidiverse sends nothing itself.
 
 ## The lightning is a lot. What should I know?
 
@@ -78,7 +100,7 @@ Kidiverse cannot run. The whole game is your child moving, so without the camera
 
 ## How do I delete everything?
 
-Delete the app. Kidiverse keeps nothing about your child on your device and sends nothing to us, so removing the app removes everything associated with it.
+The only thing Kidiverse keeps is your child’s stars, on your device. Clear them from Settings with Clear stars, or delete the app, which removes them with it. Kidiverse sends nothing to us, so there is nothing for us to delete.
 
 ## Accessibility
 

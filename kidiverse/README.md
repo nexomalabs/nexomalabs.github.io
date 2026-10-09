@@ -8,7 +8,7 @@ copy of its own.
 kidiverse/
   index.html          the landing page, hand-written (build_docs.py never overwrites it)
   styles.css          its tokens, both themes, all layout
-  main.js             theme, reveals, the sign-up form, and the drawn scenes
+  main.js             theme, reveals, and the drawn scenes
   app.json            SOURCE  metadata for tools/build_docs.py
   PRIVACY.md          SOURCE  -> privacy.html   /kidiverse/privacy
   TERMS.md            SOURCE  -> terms.html     /kidiverse/terms
@@ -94,19 +94,19 @@ Two behaviours are carried across from the app on purpose:
   full-screen flash is the specific thing that setting exists to prevent. The
   scenes still respond to a click; they simply do not animate.
 
-## The early-access form
+## Store links
 
-Out of the box the form has no server. It validates the address and then opens a
-pre-filled message to `EARLY_ACCESS_EMAIL` — which works on a static host with
-nothing running behind it.
+The Google Play badge appears twice in `index.html`, in the hero and in the
+"Get Kidiverse" section, both linking to
+`https://play.google.com/store/apps/details?id=com.nexomalabs.kidiverse`. The
+badge is Google's official artwork, in `assets/badges/google-play.png`; do not
+recolour or crop it.
 
-To collect addresses properly, set `EARLY_ACCESS_ENDPOINT` at the top of
-`main.js` to a URL that accepts `POST {"email": "...", "source": "kidiverse-site"}`.
-The form switches to it automatically and falls back to the mail app if the
-request fails.
-
-**Confirm `EARLY_ACCESS_EMAIL` before publishing.** It is currently
-`hello@nexomalabs.com`, which was assumed rather than given.
+The App Store is shown as "Coming soon" text, not Apple's badge, because Apple's
+badge may only link to an app that is live. When the App Store link exists, add
+Apple's official badge beside each Google Play badge, and remove the "coming
+soon" chip, the note under the Get Kidiverse badge, and the App Store line in
+the status ledger and in `FAQ.md`.
 
 ## Regenerating the images
 

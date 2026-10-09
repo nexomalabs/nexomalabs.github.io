@@ -223,6 +223,15 @@ a { color: inherit; }
 .btn--ghost:hover { border-color: var(--accent); color: var(--accent-ink); }
 .btn--sm { padding: 10px 18px; font-size: 0.8125rem; }
 
+/* Store badges: Google's official artwork, shown unaltered. Google asks for clear
+   space of a quarter of the badge height around it, which the gaps provide. */
+.store { display: inline-flex; border-radius: 9px; transition: transform 0.22s var(--ease); }
+.store img { height: 54px; width: auto; }
+.store:hover { transform: translateY(-2px); }
+@media (max-width: 420px) { .store img { height: 46px; } }
+@media (prefers-reduced-motion: reduce) { .store:hover { transform: none; } }
+.get { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; margin-bottom: 18px; }
+
 /* --- nav ----------------------------------------------------------------- */
 .nav {
   position: sticky;
@@ -646,6 +655,8 @@ a { color: inherit; }
   width: 12rem;
 }
 .profiles td { color: var(--text-dim); }
+.profiles--stars { min-width: 0; max-width: 720px; }
+.profiles--stars td { white-space: nowrap; font-family: var(--mono); color: var(--accent-ink); }
 .profiles tbody tr:last-child th,
 .profiles tbody tr:last-child td { border-bottom: 0; }
 
@@ -788,44 +799,13 @@ a { color: inherit; }
 .status__col li { color: var(--text-dim); font-size: 0.9375rem; }
 .status__col b { color: var(--text); font-weight: 600; }
 
-/* --- sign-up ------------------------------------------------------------- */
+/* --- get the app -------------------------------------------------------- */
 .cta__lede {
   max-width: 58ch;
   margin: 0 auto 32px;
   text-align: center;
   color: var(--text-dim);
   font-size: 1.125rem;
-}
-.signup {
-  display: flex;
-  gap: 10px;
-  max-width: 520px;
-  margin-inline: auto;
-}
-.signup input {
-  flex: 1 1 auto;
-  min-width: 0;
-  padding: 14px 18px;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: var(--surface);
-  color: var(--text);
-  font-family: var(--mono);
-  font-size: 0.875rem;
-}
-.signup input::placeholder { color: var(--text-faint); }
-.signup input:focus-visible { border-color: var(--accent); }
-.signup__status {
-  min-height: 1.5em;
-  margin: 14px 0 0;
-  text-align: center;
-  font-family: var(--mono);
-  font-size: 0.8125rem;
-  color: var(--accent-ink);
-}
-@media (max-width: 520px) {
-  .signup { flex-direction: column; }
-  .signup .btn { justify-content: center; }
 }
 
 /* --- footer -------------------------------------------------------------- */

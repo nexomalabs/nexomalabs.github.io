@@ -2,7 +2,9 @@
 
 *What Kidiverse is, how to use it safely, and what we do and do not promise.*
 
-**Version:** 1.0 · **Effective:** September 29, 2026 · **Last updated:** September 29, 2026
+**Version:** 2.0 · **Effective:** October 9, 2026 · **Last updated:** October 9, 2026
+
+**What changed in version 2.0.** These terms now state clearly that Kidiverse is for learning and fun, not a sport, race or action game; set out the rules every game must follow, including no running, no fast movement, a cleared space and an adult watching; and make clear that the adult who lets a child play is responsible for following them. They also mention stars and playing on a TV.
 
 ## These terms
 
@@ -11,6 +13,8 @@ These terms apply to the Kidiverse app, made by Nexoma Labs LLC. By letting a ch
 ## What Kidiverse is
 
 Kidiverse is a game in which a child plays by moving their body in front of a phone. The camera follows how they move, a drawn character copies them, and the world responds — clouds gather, the wind blows, comets fly, the ground shakes.
+
+A child earns stars for the moves and challenges they do. Stars only ever go up; they are a reward, not a currency, and they cannot be bought, spent or exchanged for anything.
 
 It is free. There is nothing to buy inside it, no subscription and no account to create. It is meant to be played with an adult nearby.
 
@@ -22,19 +26,29 @@ Kidiverse makes no medical, diagnostic, health or fitness claim of any kind. It 
 
 If you have any concern about your child’s health, or about whether active play is right for them, speak to a medical professional before they use Kidiverse.
 
-## Playing safely
+## What Kidiverse is for, and how it must be played
 
-Kidiverse asks a child to move their whole body, so the space they move in matters more than in an ordinary app. You are responsible for making that space safe.
+Kidiverse is made for learning and fun. It is not a sport, a race, an action game, a fitness programme or a competition, and you agree not to let it be played as one.
 
-Clear the play area of furniture, toys and anything breakable before your child starts. Give them room on all sides, and keep them away from walls, windows, stairs, glass, televisions and hot surfaces.
+Every move in Kidiverse is meant to be made calmly, standing in one spot in front of the phone: marching on the spot, a small hop, a crouch, a reach, or a single step to the side. No world asks a child to run, race or hurry, and nothing is gained by moving faster.
 
-Set the device down where it cannot be knocked over or stepped on. It is meant to be propped up a few steps away, not held.
+These rules apply every time Kidiverse is played:
 
-Stay nearby while your child plays. Kidiverse is designed so a child can play on their own, but not so that nobody is watching.
+- **No running.** A child must never run while playing, whether towards the device, away from it or around the room.
+- **No fast or sudden movement.** Moves are made slowly and carefully. Jumps are small hops on the spot, and arm movements are smooth, not wild swings.
+- **A clear, safe space.** Before play, clear an open space of at least 2 metres (about 6 feet) around the child in every direction, with nothing to hit, trip over or fall onto, away from walls, doors, windows, stairs, glass, televisions, furniture, sharp corners, hot surfaces and anything overhead. Use a dry, flat floor that is not slippery.
+- **One player in the space.** Keep other children and pets out of the play space while the game is running.
+- **Adult supervision, all the time.** An adult must be in the room and watching for the whole time a child plays, ready to stop the game at once.
+- **Stop when needed.** Stop play straight away if the child is tired, out of breath, dizzy or in pain, or if the game is being played unsafely. The stop button ends play at any time.
+- **A secure device.** Set the device down where it cannot be knocked over or stepped on. It is meant to be propped up a few steps away, not held.
 
-Let them stop when they are tired. Kidiverse never requires a child to keep moving, and the stop button ends play at any time.
+[Playing safely](safety) explains each of these in more detail. Please read it before your child plays.
 
-Make sure they are wearing something they can move in, on a floor they will not slip on.
+## Your responsibility
+
+You, as the parent, guardian or adult who lets a child use Kidiverse, are responsible for the space the child plays in, for supervising them, and for making sure the rules above are followed.
+
+Active play carries some risk of falls, collisions and strain, as any physical play does, and that risk rises sharply if the rules above are not followed. You accept that risk when you let a child play. You agree that using Kidiverse in a way these terms or [Playing safely](safety) warn against, including running, moving fast, playing in a space that has not been cleared, or playing without an adult watching, is misuse and is at your own risk.
 
 ## Flashing lights
 
@@ -50,7 +64,9 @@ A drawn character copies your child. Their picture is never put on the screen.
 
 The camera cannot tell one person from another, so anyone who walks into view can take over the character for a moment. It is your responsibility to decide who is in the room while Kidiverse is running.
 
-Nothing is recorded, saved or sent anywhere. The [Privacy Policy](privacy) explains this in full.
+Nothing the camera sees is recorded, saved or sent anywhere. The [Privacy Policy](privacy) explains this in full.
+
+If you mirror Kidiverse to a television, the TV shows what the phone’s screen shows, which is the drawn character and never the camera picture. Mirroring is a feature of your phone, not of Kidiverse, and it is up to you to choose which screen it goes to.
 
 ## What we promise, and what we do not
 
@@ -60,15 +76,15 @@ The body tracking will not be perfect. Movement is recognised from a camera imag
 
 We do not promise that Kidiverse will be uninterrupted, free of errors, compatible with every device, or that any particular feature will keep working in future versions.
 
-To the fullest extent the law allows, Nexoma Labs LLC is not liable for injury, damage or loss arising from the use of Kidiverse, including injury from moving in an unsafe space.
+To the fullest extent the law allows, Nexoma Labs LLC is not liable for injury, damage or loss arising from the use of Kidiverse. That includes, in particular, injury, damage or loss caused by running, moving fast or carelessly, playing in a space that has not been cleared, playing without an adult watching, or otherwise using Kidiverse in a way these terms or [Playing safely](safety) warn against.
 
 Nothing in these terms excludes or limits any liability that cannot be excluded or limited by law, such as liability for death or personal injury caused by negligence, or for fraud. Nothing in them takes away rights you have under the consumer law of the country you live in.
 
 ## Your data
 
-Kidiverse keeps nothing about your child on your device and sends nothing to us, so there is nothing for you to back up and nothing for us to hold, lose or restore.
+Kidiverse sends nothing to us, so there is nothing for us to hold, lose or restore.
 
-If a future version keeps progress on the device, that progress belongs to you, stays on your device, and is yours to clear whenever you like.
+The only thing Kidiverse keeps is the stars your child has earned, on your device. They belong to you, stay on your device, and are yours to clear whenever you like, from Settings in the app. We cannot recover them if they are cleared, if the app is deleted, or if the device is lost or replaced.
 
 ## Using Kidiverse properly
 
