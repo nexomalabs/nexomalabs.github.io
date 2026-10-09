@@ -334,6 +334,7 @@ details .a{padding:0 1.5rem 1.4rem;color:var(--text-muted);font-size:.95rem;max-
 .foot-btm{border-top:1px solid var(--hairline);margin-top:3rem;padding-top:1.75rem;
   display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
   font-size:.83rem;color:var(--text-faint)}
+.foot-legal{margin:1rem 0 0;font-size:.75rem;color:var(--text-faint)}
 
 /* ── Reveal ──────────────────────────────────────────────────── */
 .reveal{opacity:0;transform:translateY(26px)}
@@ -373,7 +374,7 @@ details .a{padding:0 1.5rem 1.4rem;color:var(--text-muted);font-size:.95rem;max-
       <li><a href="#privacy">Privacy</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
-    <a class="btn btn-primary btn-sm" href="https://apps.apple.com/us/app/hundy-push-up-counter/id6806351924" rel="noopener">Download</a>
+    <a class="btn btn-primary btn-sm" href="#download">Download</a>
   </nav>
 </header>
 
@@ -394,14 +395,12 @@ details .a{padding:0 1.5rem 1.4rem;color:var(--text-muted);font-size:.95rem;max-
         <a class="store" href="https://apps.apple.com/us/app/hundy-push-up-counter/id6806351924" rel="noopener">
           <img src="assets/badges/app-store.svg" width="120" height="40" alt="Download on the App Store">
         </a>
-        <!-- Google Play: replace PACKAGE_NAME with the Android application ID and remove
-             "hidden" once the listing is live. The same switch is in the hero and final CTA. -->
-        <a class="store" href="https://play.google.com/store/apps/details?id=PACKAGE_NAME" rel="noopener" hidden>
+        <a class="store" href="https://play.google.com/store/apps/details?id=com.nexomalabs.hundy" rel="noopener">
           <img src="assets/badges/google-play.png" width="181" height="54" alt="Get it on Google Play">
         </a>
         <a class="btn btn-ghost" href="#how">See how it counts</a>
       </div>
-      <p class="hero-note reveal d4">Free on iPhone. No account. No ads. Android coming soon.</p>
+      <p class="hero-note reveal d4">Free on iPhone and Android. No account. No ads.</p>
     </div>
 
     <div class="hero-stage reveal d2">
@@ -702,7 +701,7 @@ details .a{padding:0 1.5rem 1.4rem;color:var(--text-muted);font-size:.95rem;max-
 </section>
 
 <!-- ── Final CTA ────────────────────────────────────────────── -->
-<section class="section final">
+<section class="section final" id="download">
   <div class="shell final-in">
     <svg class="mark reveal" viewBox="0 0 1500 1500" aria-hidden="true">
       <g transform="translate(0 -15)">
@@ -720,13 +719,11 @@ details .a{padding:0 1.5rem 1.4rem;color:var(--text-muted);font-size:.95rem;max-
       <a class="store" href="https://apps.apple.com/us/app/hundy-push-up-counter/id6806351924" rel="noopener">
         <img src="assets/badges/app-store.svg" width="120" height="40" alt="Download on the App Store">
       </a>
-      <!-- Google Play: replace PACKAGE_NAME with the Android application ID and remove
-           "hidden" once the listing is live. The same switch is in the hero and final CTA. -->
-      <a class="store" href="https://play.google.com/store/apps/details?id=PACKAGE_NAME" rel="noopener" hidden>
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.nexomalabs.hundy" rel="noopener">
         <img src="assets/badges/google-play.png" width="181" height="54" alt="Get it on Google Play">
       </a>
     </div>
-    <p class="hero-note reveal d4">Free on iPhone. Android coming soon.</p>
+    <p class="hero-note reveal d4">Free on iPhone and Android.</p>
   </div>
 </section>
 
@@ -780,6 +777,7 @@ details .a{padding:0 1.5rem 1.4rem;color:var(--text-muted);font-size:.95rem;max-
       <span>© <span id="year">2026</span> Nexoma Labs. All rights reserved.</span>
       <span>Hundy is a training tool, not a medical device.</span>
     </div>
+    <p class="foot-legal">Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc., registered in the U.S. and other countries. Google Play and the Google Play logo are trademarks of Google LLC.</p>
   </div>
 </footer>
 
