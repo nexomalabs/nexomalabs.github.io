@@ -2,7 +2,7 @@
 
 *The space your child plays in, how to move, flashing lights, and what Kidiverse is not.*
 
-**Last updated:** October 9, 2026
+**Last updated:** October 10, 2026
 
 ## What Kidiverse is for
 
@@ -16,7 +16,7 @@ Read these to your child before they play, and make sure they follow them every 
 
 **Never run.** Not towards the phone, not away from it, not around the room. If your child starts running, stop the game.
 
-**Move slowly and carefully.** Jumps should be small hops on the spot. Arm movements should be smooth, not wild swings. There is no prize for speed.
+**Move slowly and carefully.** Jumps should be small hops on the spot. Arm movements should be smooth, not wild swings. There is no prize for speed. If your child should not jump at all, turn on No hops in Settings: every world then asks for a knee lift instead, with one foot always on the floor.
 
 **Stay in your spot.** Your child plays in one place, facing the phone. Steps are marched on the spot, and a single step to the side is the most a move ever needs.
 

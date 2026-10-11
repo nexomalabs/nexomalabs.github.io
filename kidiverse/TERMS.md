@@ -2,7 +2,9 @@
 
 *What Kidiverse is, how to use it safely, and what we do and do not promise.*
 
-**Version:** 2.0 · **Effective:** October 9, 2026 · **Last updated:** October 9, 2026
+**Version:** 2.1 · **Effective:** October 10, 2026 · **Last updated:** October 10, 2026
+
+**What changed in version 2.1.** These terms now mention the No hops setting, which turns every hop into a knee lift for a child who should not jump, and say what else Kidiverse keeps on your device besides the stars. Nothing else changed.
 
 **What changed in version 2.0.** These terms now state clearly that Kidiverse is for learning and fun, not a sport, race or action game; set out the rules every game must follow, including no running, no fast movement, a cleared space and an adult watching; and make clear that the adult who lets a child play is responsible for following them. They also mention stars and playing on a TV.
 
@@ -35,7 +37,7 @@ Every move in Kidiverse is meant to be made calmly, standing in one spot in fron
 These rules apply every time Kidiverse is played:
 
 - **No running.** A child must never run while playing, whether towards the device, away from it or around the room.
-- **No fast or sudden movement.** Moves are made slowly and carefully. Jumps are small hops on the spot, and arm movements are smooth, not wild swings.
+- **No fast or sudden movement.** Moves are made slowly and carefully. Jumps are small hops on the spot, and arm movements are smooth, not wild swings. If your child should not jump at all, turn on No hops in Settings and every world asks for a knee lift instead.
 - **A clear, safe space.** Before play, clear an open space of at least 2 metres (about 6 feet) around the child in every direction, with nothing to hit, trip over or fall onto, away from walls, doors, windows, stairs, glass, televisions, furniture, sharp corners, hot surfaces and anything overhead. Use a dry, flat floor that is not slippery.
 - **One player in the space.** Keep other children and pets out of the play space while the game is running.
 - **Adult supervision, all the time.** An adult must be in the room and watching for the whole time a child plays, ready to stop the game at once.
@@ -84,7 +86,7 @@ Nothing in these terms excludes or limits any liability that cannot be excluded 
 
 Kidiverse sends nothing to us, so there is nothing for us to hold, lose or restore.
 
-The only thing Kidiverse keeps is the stars your child has earned, on your device. They belong to you, stay on your device, and are yours to clear whenever you like, from Settings in the app. We cannot recover them if they are cleared, if the app is deleted, or if the device is lost or replaced.
+Kidiverse keeps three small things, on your device: the stars your child has earned, the No hops setting, and a short list of problems if part of the app stops working. They belong to you, stay on your device, and are yours to clear whenever you like, from Settings in the app. We cannot recover them if they are cleared, if the app is deleted, or if the device is lost or replaced. The [Privacy Policy](privacy) says exactly what each one holds.
 
 ## Using Kidiverse properly
 

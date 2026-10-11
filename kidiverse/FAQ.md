@@ -2,13 +2,13 @@
 
 *Answers to what parents actually ask about Kidiverse, and how to reach us.*
 
-**Last updated:** October 9, 2026
+**Last updated:** October 10, 2026
 
 ## What is Kidiverse?
 
 A game your child plays by moving. They stand in front of the phone, a drawn character copies them, and the worlds respond to what they do — raise both arms and clouds gather, sweep an arm and the wind blows, jump and lightning strikes.
 
-There is no controller, no buttons to press during play, and nothing to read. There are eight worlds to choose from on the map: Weather, My Body, Lab, Space, Dinosaurs, Under the Sea, Desert and Snow.
+There is no controller, no buttons to press during play, and nothing to read. There are nine worlds to choose from on the map: Weather, My Body, Lab, Space, Dinosaurs, Under the Sea, Desert, Snow and Planets.
 
 ## Where can I get it?
 
@@ -49,6 +49,8 @@ The gate closes again when you leave the settings, so there is nothing to tidy u
 ## Does my child need to run or move fast?
 
 No, and they must not. Kidiverse is a game for learning and fun, not a sport, a race or an action game. Every move is made calmly in one spot in front of the phone: marching on the spot, a small hop, a crouch, a reach, or a single step to the side. Nothing is gained by moving faster, and a missed obstacle simply comes round again.
+
+If your child should not jump at all, turn on No hops in Settings. Every world then asks for a knee lift instead, with one foot always on the floor.
 
 Before every game, clear an open space of at least 2 metres (about 6 feet) around your child, and stay in the room watching while they play. If your child starts running or moving wildly, stop the game. The full rules are in [Playing safely](safety).
 
@@ -100,7 +102,7 @@ Kidiverse cannot run. The whole game is your child moving, so without the camera
 
 ## How do I delete everything?
 
-The only thing Kidiverse keeps is your child’s stars, on your device. Clear them from Settings with Clear stars, or delete the app, which removes them with it. Kidiverse sends nothing to us, so there is nothing for us to delete.
+Kidiverse keeps three small things, all on your device: your child’s stars, the No hops setting, and a short list of problems if part of the app stops working. In Settings, choose Clear stars, clear the list under Problems on this device, and turn No hops off. Or delete the app, which removes all three. Kidiverse sends nothing to us, so there is nothing for us to delete.
 
 ## Accessibility
 
@@ -115,6 +117,8 @@ If Kidiverse does not work for your child and you can tell us why, we would like
 Email support@nexomalabs.com. These things help us work out what happened: the device and its system version, for example iPhone 15, iOS 26; what your child was doing when it went wrong, and what you expected instead; whether it happens every time or only sometimes; and, if it is a tracking problem, how bright the room was, how far back the phone was, and what was behind your child.
 
 If you send it from Contact us in the app’s Settings, Kidiverse fills in the app version and the system version for you. You can delete them before sending.
+
+If part of the app stopped working, Settings also has Problems on this device: a short list of what went wrong, kept only on the phone. You can email it to us from there. It opens your own mail app with the list in it, so you can read it before you send, and it says nothing about your child.
 
 Please do not send photographs or video of your child. We do not need them and we do not want to hold them.
 
