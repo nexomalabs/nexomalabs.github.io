@@ -47,19 +47,23 @@
 
       <div class="doc-body">
 <p><em>The questions people ask about camera-based rep counting.</em></p>
-<p><strong>Last updated:</strong> 2026-09-29</p>
+<p><strong>Last updated:</strong> 2026-10-21</p>
 <h2>Does Hundy record or upload video?</h2>
-<p>No. Frames are analysed as they arrive and discarded immediately. Nothing is written to storage, nothing is sent anywhere, and Hundy has no server to send it to.</p>
+<p>No. Frames are analysed as they arrive and discarded immediately. No image or video is ever written to storage or sent anywhere — not even if you join the weekly challenge, which only sends your name, country and workout totals.</p>
 <h2>Do I need an account?</h2>
-<p>No. Hundy works fully offline with no sign-in. Accounts will only ever be needed for features that genuinely require a server, such as cloud backup and leaderboards, and counting will never be behind one.</p>
+<p>No. Hundy works fully offline with no sign-in. The optional weekly challenge does not need an account either: there is no email and no password, just a private key your phone keeps in its secure storage. Counting will never be behind a sign-in.</p>
 <h2>What is the dashed figure doing push-ups on my screen?</h2>
 <p>That is the setup guide, and it appears before you press Start. It shows the placement and the depth Hundy is looking for, so you can line yourself up with it rather than guess. It follows the camera-view switch, it only ever demonstrates a repetition that would count, and it disappears once the countdown starts. It is never counted and never recorded.</p>
 <h2>Why did a rep not count?</h2>
-<p>Almost always depth or body line. Open the workout in Progress and look at the rep-by-rep list — each rep says exactly what was missing. If Hundy could not see you properly, the reps around it will say "stay in frame".</p>
+<p>Hundy tells you the moment it happens, on screen and out loud if the voice coach is on. Usually it is depth or lockout — your hips and even pushing are coached, never a reason to refuse a rep. "Lost you at the bottom" is different: the camera lost sight of you before it could see how deep you went, so it is about the camera, not your form. With the phone in front of you, a rep like that counts, so you only hear this if a hand left the floor; with the phone beside you, you hear it every time. "Stay in frame" means it could not see you for more than two seconds.</p>
+<p>When the same reason stops two reps in a row, Hundy says what to change, out loud once and on screen until a rep counts. A set that ends with nothing counted shows what was seen and why instead of closing.</p>
+<p>With strict mode off, imperfect reps still count, and the rep-by-rep list for the workout in Progress shows what each one missed.</p>
 <h2>Why does my phone show "Demo" during a workout?</h2>
 <p>On-device pose detection needs a native model that is only present in a development or release build of the app. In Expo Go, on a simulator, or in a build without the model, Hundy runs a synthetic athlete through exactly the same counting pipeline so you can see the product work. It is always labelled, and those sessions are stored with their source recorded so they never masquerade as real training.</p>
 <h2>How much history is kept?</h2>
 <p>Session totals, records and streaks are kept indefinitely — losing training history is the most common complaint about apps in this category and Hundy does not do it. Per-rep form detail is much larger, so it is kept for a window you choose in Settings, twelve weeks by default.</p>
+<h2>Why did I not get a reminder today?</h2>
+<p>The daily reminder is skipped on any day you have already trained — it only exists to nudge you on days you have not. It also stops after two weeks without opening Hundy, and it needs notifications allowed for Hundy in your phone's settings. Open the app and it plans the next two weeks again.</p>
 <h2>Does it work with the phone flat on the floor?</h2>
 <p>It needs to see your body, so a lens pointing at the ceiling will not work. Lean the phone against something so the camera looks at you from the side. Hundy tells you when the view is unusable rather than counting badly.</p>
 <h2>Can I put the phone in front of me instead of beside me?</h2>
@@ -70,8 +74,30 @@
 <p>No. Look down naturally. Hundy tracks your shoulders, elbows, wrists and hips — it never needs your face, and it does not care where you are looking.</p>
 <h2>Can I use the back camera?</h2>
 <p>The workout screen uses the front camera so you can see yourself and the tracking lines while you set up. Back-camera support is on the roadmap for people who prefer to prop the phone facing away.</p>
+<h2>What is the weekly challenge?</h2>
+<p>An optional, free competition between people in the same country. Every strict rep you do on camera after joining counts toward your country's board for the week, which resets every Monday at 00:00 UTC. Hundy offers it once at the end of the welcome screens; you can also join from the workout summary, the Compete tab or Settings.</p>
+<h2>Why is my name "Player" and a number?</h2>
+<p>Hundy suggests a name like "Player 4821" when you first open the app, so nobody has to invent one. Keep it if you would rather not show anything personal on the boards, or change it: before you join, in Settings; after you join, from your name at the top of Settings, once every 30 days.</p>
+<h2>Where do I see my rank?</h2>
+<p>On the workout summary, right after each camera workout once it has uploaded: your place this week in your country and in the world, and how many places the workout moved you up. The Compete tab has the full picture — your league, both boards, this week and all time.</p>
+<h2>How do leagues work?</h2>
+<p>Your first camera workout of the week puts you in a league of up to 30 people in your tier. When the week ends, the top five move up a tier and the bottom five move down — Bronze, Silver, Gold, Platinum, Diamond, Hundy. A league is only people who worked out that week, so you never race empty profiles. Leagues are free for everyone.</p>
+<h2>When does the week end?</h2>
+<p>Monday at 00:00 UTC, for everyone in the world at once. The Compete tab counts down in your own time zone — for example Sunday 8:00 PM in New York, or Monday 2:00 AM in Cairo.</p>
+<h2>My workout uploaded late. Why did my league place not change?</h2>
+<p>League places are decided the moment the week ends, so they are the same for everyone and never change afterwards. A workout that reaches the server later — within two days of the week ending — still counts toward that week's board and your all-time total.</p>
+<h2>What does "Free during early access" mean?</h2>
+<p>The world boards and the all-time boards are free while Hundy is new. Later they may become part of Hundy Plus, an optional subscription. Your league and your country's weekly board will always be free, and so will counting, your history, records and streaks.</p>
+<h2>What does "Top 18%" mean?</h2>
+<p>That you are ahead of at least 82% of the people on that board. On a big board a percentage says more than a place like 4,312th, so the Compete tab shows both when it can.</p>
+<h2>What does joining the weekly challenge share?</h2>
+<p>Your display name, your country, and a summary of each camera workout from the moment you join: when it happened, how long it took, rep counts and the form score. That is all. Never video, images, your email, your location or your contacts — and nothing from before you joined.</p>
+<h2>Why did a workout not count toward the challenge?</h2>
+<p>Hundy tells you on the workout summary. The usual reasons: it was a demo workout rather than a camera one, it happened before you joined, it uploaded more than two days after its week ended, or its numbers did not add up. Only strict reps count, so a workout with strict mode off adds its strict reps and leaves out the ones marked "needs work".</p>
+<h2>How do I leave the weekly challenge?</h2>
+<p>Settings → your name at the top → Leave the challenge. Everything the challenge holds about you is deleted at once. If you are offline, your phone remembers and sends the deletion the next time it can. Your workouts stay on your phone, and you can join again any time.</p>
 <h2>How do I delete everything?</h2>
-<p>Settings → Data and privacy → Delete all data. It clears every workout, rep and setting from the device immediately. Deleting the app does the same thing. Nobody else holds a copy — the only other place your history can exist is a device backup of your own, in your iCloud or Google account.</p>
+<p>Settings → Data and privacy → Delete all data. It clears every workout, rep and setting from the device immediately, and if you joined the weekly challenge it deletes your challenge profile too. Deleting the app clears the device the same way, but does not reach the challenge — leave it first, or it is deleted automatically after a year without workouts. The only other place your history can exist is a device backup of your own, in your iCloud or Google account.</p>
 <h2>How do I get help, or send feedback?</h2>
 <p>Both live at the bottom of Settings. "Contact us" under Help opens an email to <a href="mailto:support@nexomalabs.com">support@nexomalabs.com</a> for anything that is broken or confusing. "Share feedback and suggestions" opens an email to <a href="mailto:hundy@nexomalabs.com">hundy@nexomalabs.com</a> for ideas about what Hundy should do next.</p>
 <p>Neither sends anything automatically. Each one opens your own mail app with the address filled in, so nothing leaves your phone until you press send.</p>

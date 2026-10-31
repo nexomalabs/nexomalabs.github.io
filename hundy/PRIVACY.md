@@ -2,7 +2,7 @@
 
 _Short, because there is very little to say._
 
-**Last updated:** 2026-09-29
+**Last updated:** 2026-10-21
 
 ## Who we are
 
@@ -12,7 +12,9 @@ This policy covers the Hundy app on iPhone and Android, and applies wherever you
 
 ## What Hundy collects
 
-Nothing leaves your device. Hundy has no analytics, no advertising, no crash reporting service and no backend. There is no account, so there is nothing tied to your identity, and we have no way to see how you use the app.
+Unless you choose to join the weekly challenge, nothing leaves your device. Hundy has no analytics, no advertising and no crash reporting service. There is no account, so there is nothing tied to your identity, and we have no way to see how you use the app.
+
+The weekly challenge is optional and off until you join it. What it sends, and why, is described in its own section below.
 
 ## Camera
 
@@ -26,13 +28,35 @@ Hundy keeps a local database containing only:
 - Per-rep detail: depth, tempo and which form rules a rep missed, for the history window you choose.
 - Your settings, including your display name if you set one.
 
+## The weekly challenge (optional)
+
+If you join the weekly challenge, Hundy sends our challenge server the following, and nothing else:
+
+- The display name and country you choose, and the date you joined.
+- For each workout recorded with the camera after you joined: when it started and ended, its duration, total and strict rep counts, the longest strict set, the average form score and tempo.
+- A random player identifier and a secret key your phone creates when you join, so the server knows the uploads are yours. We store only a one-way hash of the key. There is no email, no password and no device identifier.
+
+## How challenge data is used and kept
+
+We use it only to run the challenge: to add your strict reps to your country's weekly board and your all-time total, to show your name and totals on the boards, and to check that results are plausible so the boards stay honest. Your display name, country and totals are visible to other players — on the boards, and to the others in your league. We rely on performing the service you asked to join; you can stop at any time by leaving.
+
+The challenge server runs on Cloudflare, which processes the data on our behalf and may do so outside your country, including in the United States. Where the law requires it, such transfers are protected by safeguards such as the European Commission's Standard Contractual Clauses.
+
+Like any server, Cloudflare sees your phone's IP address when it connects. We do not store it with your challenge data; it can appear briefly in Cloudflare's operational logs, which we use only to fix problems and which are deleted after a few days. To stop automated sign-ups, the server also counts how many times an IP address joins in a minute; that count is held in memory only and forgotten after the minute.
+
+We keep as little as we can, for as short a time as we can:
+
+- Workout summaries: 30 days, then deleted. Your weekly and all-time totals are kept instead.
+- Weekly totals and league places: 12 weeks.
+- Your challenge profile: until you leave, or 12 months after your last counted workout, whichever comes first.
+
 ## What is never stored
 
-No images, no video, no audio, no location, no contacts, no device identifiers and no advertising identifiers.
+No images, no video, no audio, no location, no contacts, no device identifiers and no advertising identifiers — on your device or, if you join the weekly challenge, on ours.
 
 ## Notifications and the voice coach
 
-The optional daily reminder is scheduled locally by your device. No push server is involved and no reminder data is sent anywhere.
+The optional daily reminder and the optional week-end reminder are scheduled locally by your device. No push server is involved and no reminder data is sent anywhere. Hundy asks for notification permission only when you choose to turn a reminder on.
 
 The voice coach uses the text-to-speech built into your phone. The only thing Hundy hands it is the word to say — a rep number or a short cue such as "go deeper".
 
@@ -54,24 +78,24 @@ We do not sell or share personal information, including as those terms are defin
 
 Depending on where you live — including the European Economic Area, the United Kingdom, Switzerland, California and other US states, Brazil and Canada — you may have the right to access, correct, delete or receive a copy of your personal data, to restrict or object to how it is used, and to withdraw consent. You will never be treated differently for exercising any of these rights.
 
-For everything Hundy stores, you already have all of these rights in your hand: the data is on your phone, and Settings → Data and privacy → Delete all data erases it. For anything else, such as emails you have sent us, write to us and we will respond within the time the law allows, normally one month.
+For everything Hundy stores on your phone, you already have all of these rights in your hand: the data is on your phone, and Settings → Data and privacy → Delete all data erases it. For the weekly challenge, you can change your name and country in Settings, and leaving deletes your challenge data at once. For a copy of your challenge data, or anything else, such as emails you have sent us, write to us and we will respond within the time the law allows, normally one month.
 
 If you are in the EEA, the UK or Switzerland and are unhappy with how we have handled your data, you can complain to your local data protection authority.
 
 ## Children
 
-Hundy is designed for adults and is not directed at children. It collects no personal data from anyone, including children under 13 or the minimum age of digital consent in your country. If you believe a child has emailed us, let us know and we will delete the message.
+Hundy is designed for adults and is not directed at children. Counting collects no personal data from anyone. The weekly challenge is open only to people who confirm they are 13 or older, because its boards are public; if you are below the minimum age of digital consent in your country, ask a parent or guardian before joining. If you believe a child has joined the challenge or emailed us, let us know and we will delete their data.
 
 ## Security
 
-Your workout database lives inside Hundy's private storage on your phone, protected by the operating system and by your device passcode. Because nothing is transmitted, there is no server copy to be breached.
+Your workout database lives inside Hundy's private storage on your phone, protected by the operating system and by your device passcode. If you join the weekly challenge, your secret key is kept in your phone's secure storage (the iOS Keychain or Android Keystore), everything sent to the challenge server is encrypted in transit, and the server holds only the summaries listed above — never a copy of your workout history.
 
 ## Deleting your data
 
-Settings → Data and privacy → Delete all data removes everything from the device immediately and irreversibly. Uninstalling Hundy removes the same data. We hold no copy of it, so there is nothing on our side to request or delete. A device backup you made earlier is yours, and is deleted in your iCloud or Google account settings.
+Settings → Data and privacy → Delete all data removes everything from the device immediately and irreversibly, and deletes your weekly challenge profile from our server too. Uninstalling Hundy removes the device data but cannot reach the server, so leave the challenge first if you joined it; otherwise your challenge data is deleted automatically 12 months after your last counted workout. A device backup you made earlier is yours, and is deleted in your iCloud or Google account settings.
 
 ## If this ever changes
 
-Optional features that need a server — cloud backup, leaderboards, friend challenges — will be exactly that: optional, off by default, and clearly described before you turn them on. On-device rep counting will never require an account.
+Optional features that need a server — the weekly challenge today, and later leaderboards, cloud backup and friend challenges — are exactly that: optional, off by default, and clearly described before you turn them on. On-device rep counting will never require an account.
 
 When this policy changes, the date at the top changes with it, and material changes will be described in the app before they take effect.

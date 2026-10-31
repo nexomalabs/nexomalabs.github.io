@@ -2,7 +2,7 @@
 
 _The agreement between you and Hundy._
 
-**Last updated:** 2026-09-29
+**Last updated:** 2026-10-21
 
 ## The agreement
 
@@ -34,11 +34,19 @@ We give you a personal, non-exclusive, non-transferable and revocable licence to
 
 ## Your data
 
-Your workouts are stored only on your device. You are responsible for your own backups; if you delete the app, lose the device or clear its data without a device backup, your history is gone and cannot be recovered by anyone.
+Your workouts are stored only on your device. If you join the weekly challenge, summaries of your workouts are shared as the privacy policy describes, but your history itself is not backed up by us. You are responsible for your own backups; if you delete the app, lose the device or clear its data without a device backup, your history is gone and cannot be recovered by anyone.
+
+## The weekly challenge
+
+The weekly challenge is optional and free, and open to people who are 13 or older. By joining, you agree that your display name, country and rep totals are shown to other players.
+
+Play fair. Only reps you actually performed, counted by the camera in Hundy, belong on a board. Do not falsify, replay or automate workouts, modify the app or its traffic, run several profiles, or choose a display name that is offensive, misleading or someone else's.
+
+We may remove a display name, a result or a player that breaks these rules or looks implausible, and we may reset boards to fix errors. The challenge is a game: there are no cash or physical prizes, and a place on a board has no monetary value. We may change, pause or end the challenge; if we end it, your challenge data is deleted.
 
 ## Acceptable use
 
-Do not use Hundy to record or analyse anyone who has not agreed to it. Do not attempt to falsify verified rep counts, particularly once competitive features exist — the entire value of a camera-verified number is that it is honest.
+Do not use Hundy to record or analyse anyone who has not agreed to it. Do not attempt to falsify verified rep counts, in the weekly challenge or anywhere else — the entire value of a camera-verified number is that it is honest.
 
 ## Warranty and liability
 
