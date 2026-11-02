@@ -42,7 +42,7 @@ It needs to see your body, so a lens pointing at the ceiling will not work. Lean
 
 ## Can I put the phone in front of me instead of beside me?
 
-Yes. A low, head-on placement — phone propped in front of you with the lens pointing at your face — is fully supported, and Hundy detects it automatically. It counts depth and lockout normally and judges even pushing more strictly than a side view can, because both arms are visible. The one thing it cannot do head-on is judge your body line, since sagging hips move straight away from the lens; Hundy says so on the setup card instead of guessing.
+Yes. A low, head-on placement — phone propped in front of you with the lens pointing at your face — is fully supported, and Hundy detects it automatically. It counts depth and lockout normally and judges even pushing, which a side view cannot, because both arms are visible. The one thing it cannot do head-on is judge your body line, since sagging hips move straight away from the lens; Hundy says so on the setup card instead of guessing.
 
 ## Can I choose the camera angle myself?
 
@@ -51,6 +51,10 @@ Yes. The workout screen has an Auto / Side view / Front view switch above the st
 ## Do I have to look at the camera?
 
 No. Look down naturally. Hundy tracks your shoulders, elbows, wrists and hips — it never needs your face, and it does not care where you are looking.
+
+## Why can I not hear the voice coach?
+
+Check that the voice coach is on in Settings, and turn up your phone's media volume — the one music and videos use. The coach speaks with your iPhone on silent too, and plays over any music rather than stopping it. To work out in silence, turn the voice coach off; every rep still pulses.
 
 ## Can I use the back camera?
 
