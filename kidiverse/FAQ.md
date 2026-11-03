@@ -90,7 +90,15 @@ Give them space to the sides so their arms stay in the picture when they open th
 
 ## Does Kidiverse cost anything?
 
-No. It is free. There is nothing to buy inside it, no subscription and no upgrade, and this version shows no advertising.
+Kidiverse is free to play: every world and character that was in the app before Kidiverse Plus, the Hero Training Academy, and two heroes, Star Streak and Turbo Tiger. This version shows no advertising.
+
+Kidiverse Plus is an optional subscription, monthly or yearly, that adds more heroes and more worlds. Only a grown-up can buy it, in the app's settings, behind the parental gate and a second question before payment. Nothing your child sees while playing mentions it or asks them to buy anything.
+
+## How do I subscribe to, restore or cancel Kidiverse Plus?
+
+Open Settings in the app, answer the parental gate, and choose Kidiverse Plus. That page shows both plans at the store's own prices, says whether a free trial is available to you, and has Restore purchases for a new or reinstalled device.
+
+To cancel, choose Change or cancel on that page, or go to your Apple ID's subscription settings, or to Google Play under Payments and subscriptions. Plus stays on until the end of the period you have paid for. For a refund on the App Store, ask Apple at [reportaproblem.apple.com](https://reportaproblem.apple.com). On Google Play, ask Google Play, or write to us at support@nexomalabs.com with the order number from your Google Play receipt. The [Terms of Use](terms#kidiverse-plus) explain renewal, trials and refunds in full.
 
 ## Does it work without the internet?
 

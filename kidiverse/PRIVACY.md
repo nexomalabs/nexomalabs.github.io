@@ -2,7 +2,9 @@
 
 *Kidiverse collects nothing about your child. This page explains exactly what that means.*
 
-**Version:** 2.1 · **Effective:** October 10, 2026 · **Last updated:** October 10, 2026
+**Version:** 2.2 · **Effective:** October 19, 2026 · **Last updated:** October 19, 2026
+
+**What changed in version 2.2.** Kidiverse now offers Kidiverse Plus, an optional subscription a grown-up can buy in the app's settings. The purchase is made with Apple or Google, not with us: Kidiverse sends nothing about it, or about your child, to us, and keeps no record of it on your device. On Android, buying through Google Play adds one permission the store needs. Nothing Kidiverse collects or sends has changed.
 
 **What changed in version 2.1.** Kidiverse now keeps two more small things on your device, beside the stars your child earns: a short list of problems, written down when part of the app stops working, and the No hops setting. Neither says anything about your child, Kidiverse never sends either of them, and you can see and change both in Settings. The problem list reaches us only if you choose to email it to us from your own mail app. Version 2.0, before this one, added the stars, playing on a TV with your phone’s own screen mirroring, and the permissions Android lists for the app. Nothing Kidiverse collects or sends has changed: it still sends nothing to us or to anyone else.
 
@@ -72,7 +74,7 @@ Kidiverse asks you for one permission: the camera. It explains why before your d
 
 Kidiverse does not ask for the microphone, photos, contacts, location, health data, motion data or notifications, and it does not use them.
 
-On Android, the app’s store listing and system settings also show permissions you are never asked for. Android grants them without a question when the app is installed, and some are added automatically by the software Kidiverse is built with. The one Kidiverse itself declares is permission to change audio settings, which lets it control how its own sounds play. It does not give access to the microphone and cannot record anything. None of these permissions is used to collect anything about your child or to send anything from your device.
+On Android, the app’s store listing and system settings also show permissions you are never asked for. Android grants them without a question when the app is installed, and some are added automatically by the software Kidiverse is built with. Kidiverse itself declares two: permission to change audio settings, which lets it control how its own sounds play, and Google Play's billing permission, which lets a grown-up buy Kidiverse Plus through Google Play. It does not give access to the microphone and cannot record anything. None of these permissions is used to collect anything about your child or to send anything from your device.
 
 ## Children’s privacy
 
@@ -80,7 +82,9 @@ Kidiverse is made for children to play, with a grown-up nearby. It does not coll
 
 In particular, Kidiverse uses no persistent identifier (such as an advertising ID or device ID), does not use the microphone or record anyone’s voice, and gives a child no way to make any information about themselves public.
 
-Kidiverse has no in-app purchases, no social features, no chat, no accounts and no user-generated content. The settings, these pages and every link that leaves the app sit behind a parental gate: a multiplication question that has to be answered on a keypad. After three wrong answers the gate locks for a while, and the wait grows each time, so a young child cannot get through by guessing.
+Kidiverse has no social features, no chat, no accounts and no user-generated content. The only thing to buy is Kidiverse Plus, an optional subscription that is offered only in the settings, behind the parental gate, with a second gate question before the store's payment sheet. Nothing a child sees while playing mentions it.
+
+When a grown-up buys or restores Kidiverse Plus, the purchase is made with Apple or Google under their own privacy policies, using the store account already on the device. Kidiverse asks the store only whether this device has Plus. It keeps no record of the answer, and sends nothing about the purchase, or about your child, to us or to anyone else. The settings, these pages and every link that leaves the app sit behind a parental gate: a multiplication question that has to be answered on a keypad. After three wrong answers the gate locks for a while, and the wait grows each time, so a young child cannot get through by guessing.
 
 ## Sharing, selling and tracking
 

@@ -1,12 +1,12 @@
 # Open-source licences
 
-*The open-source software Kidiverse is built with, and the licences it is shared under. For Kidiverse 1.0.0.*
+*The open-source software Kidiverse is built with, and the licences it is shared under. For Kidiverse 2.0.1.*
 
-Kidiverse is built with 571 open-source components. Thank you to the people who make them. Each is listed below with its copyright notice, grouped by licence, and the text of each licence follows the lists.
+Kidiverse is built with 573 open-source components. Thank you to the people who make them. Each is listed below with its copyright notice, grouped by licence, and the text of each licence follows the lists.
 
 ## MIT
 
-496 components. The MIT licence text is under Licence texts, below.
+498 components. The MIT licence text is under Licence texts, below.
 
 | Component | Version | Copyright |
 |---|---|---|
@@ -257,6 +257,7 @@ Kidiverse is built with 571 open-source components. Thank you to the people who 
 | expo | 57.0.12 | Copyright (c) 2015-present 650 Industries, Inc. (aka Expo) |
 | expo-asset | 57.0.10 | Copyright (c) 2015-present 650 Industries, Inc. (aka Expo) |
 | expo-audio | 57.0.5 | Copyright (c) 2015-present 650 Industries, Inc. (aka Expo) |
+| expo-build-properties | 57.0.22 | Copyright (c) 2015-present 650 Industries, Inc. (aka Expo) |
 | expo-constants | 57.0.10 | Copyright (c) 2015-present 650 Industries, Inc. (aka Expo) |
 | expo-dev-client | 57.0.11 | Copyright (c) 2015-present 650 Industries, Inc. (aka Expo) |
 | expo-dev-launcher | 57.0.11 | Copyright (c) 2015-present 650 Industries, Inc. (aka Expo) |
@@ -266,6 +267,7 @@ Kidiverse is built with 571 open-source components. Thank you to the people who 
 | expo-file-system | 57.0.2 | Copyright (c) 2015-present 650 Industries, Inc. (aka Expo) |
 | expo-font | 57.0.1 | Copyright (c) 2015-present 650 Industries, Inc. (aka Expo) |
 | expo-glass-effect | 57.0.1 | Copyright (c) 2015-present 650 Industries, Inc. (aka Expo) |
+| expo-iap | 5.8.2 | Copyright (c) 2025 hyochan |
 | expo-image | 57.0.2 | Copyright (c) 2015-present 650 Industries, Inc. (aka Expo) |
 | expo-json-utils | 57.0.1 | Copyright (c) 2015-present 650 Industries, Inc. (aka Expo) |
 | expo-keep-awake | 57.0.1 | Copyright (c) 2015-present 650 Industries, Inc. (aka Expo) |

@@ -2,7 +2,9 @@
 
 *What Kidiverse is, how to use it safely, and what we do and do not promise.*
 
-**Version:** 2.1 · **Effective:** October 10, 2026 · **Last updated:** October 10, 2026
+**Version:** 2.2 · **Effective:** October 19, 2026 · **Last updated:** October 19, 2026
+
+**What changed in version 2.2.** Kidiverse is still free to play, and now has an optional subscription, Kidiverse Plus, that a grown-up can buy in the app's settings. It adds more superheroes and more worlds. The new section [Kidiverse Plus](#kidiverse-plus) explains how it is bought, renewed and cancelled, and how refunds work. Nothing else changed.
 
 **What changed in version 2.1.** These terms now mention the No hops setting, which turns every hop into a knee lift for a child who should not jump, and say what else Kidiverse keeps on your device besides the stars. Nothing else changed.
 
@@ -18,7 +20,31 @@ Kidiverse is a game in which a child plays by moving their body in front of a ph
 
 A child earns stars for the moves and challenges they do. Stars only ever go up; they are a reward, not a currency, and they cannot be bought, spent or exchanged for anything.
 
-It is free. There is nothing to buy inside it, no subscription and no account to create. It is meant to be played with an adult nearby.
+Kidiverse is free to download and play. Kidiverse Plus, an optional subscription that only a grown-up can buy, adds more heroes and worlds; everything else stays free, and nothing that was free before Plus will become part of it. There is no account to create. Kidiverse is meant to be played with an adult nearby.
+
+## Kidiverse Plus
+
+Kidiverse Plus is an optional, auto-renewing subscription. It adds the heroes and the worlds marked as Plus in the app. Everything else in Kidiverse stays free, with or without it.
+
+**Who buys it.** Only an adult. Kidiverse Plus is offered only in the app's settings, which sit behind a parental gate, and the app asks a second gate question just before the store's payment sheet opens. Nothing a child sees while playing mentions Plus, shows a price or asks them to buy anything.
+
+**Plans and prices.** Kidiverse Plus is sold monthly or yearly. The app shows each plan's price as Apple or Google gives it, in your currency and including any tax, before you confirm. Prices can change; if a price goes up, Apple or Google will tell you beforehand, as their own rules require, and you can cancel before it applies.
+
+**Free trial.** A plan may come with a free trial, for new subscribers only. The app says so only when the store says you can have one. If you do not cancel before the trial ends, the subscription starts and you are charged. On the App Store, any unused part of a free trial ends when you buy a subscription.
+
+**Payment and renewal.** Payment is charged to your Apple ID or Google Play account when you confirm the purchase. The subscription renews automatically at the end of each period, at the same price unless you were told of a change, until you cancel it. On the App Store, it renews unless it is turned off at least 24 hours before the end of the current period, and your account is charged for renewal within the 24 hours before the period ends.
+
+**Cancelling.** You can cancel at any time in your Apple ID's subscription settings, or in Google Play under Payments and subscriptions. The Kidiverse Plus page in the app's settings has a button that opens the right place. When you cancel, Plus stays on until the end of the period you have already paid for, and then ends.
+
+**Refunds.** Payments are taken by Apple or Google. On the App Store, refunds are decided by Apple under its own policy: ask at [reportaproblem.apple.com](https://reportaproblem.apple.com). We cannot issue App Store refunds ourselves. On Google Play, you can ask Google Play, or write to us at support@nexomalabs.com with the order number from your Google Play receipt (it starts with GPA.); we look at each request and, when we agree to one, refund it through Google Play. If the latest payment is refunded, Plus ends straight away. Nothing in these terms takes away any right to a refund you have under the consumer law of the country you live in.
+
+**Restoring, and your family.** If you reinstall Kidiverse or use another device signed in to the same store account, choose Restore purchases on the Kidiverse Plus page. Where Apple's Family Sharing is available, one subscription covers the devices in your family group.
+
+**When Plus ends.** The Plus heroes and worlds are no longer offered. A child who was playing as a Plus hero plays as the stick figure instead. Their stars stay.
+
+**What we add, and when.** We plan to add new Plus heroes and worlds over time, at no extra cost to subscribers, but we do not promise a particular schedule. We may change or retire a Plus world or hero, as we may any part of Kidiverse.
+
+**Your child's data.** Buying Plus shares nothing about your child with us. The purchase is between you and Apple or Google. The app asks the store only whether this device has Plus, keeps no record of the answer, and sends nothing to us. The [Privacy Policy](privacy) says this in full.
 
 ## Kidiverse is not medical, and makes no measurement of your child
 
@@ -100,7 +126,7 @@ Kidiverse, its name, its artwork, its code and its design belong to Nexoma Labs 
 
 If you downloaded Kidiverse from the App Store, Apple’s standard licence agreement for apps also applies. These terms are between you and Nexoma Labs LLC, not Apple. Apple has no obligation to provide support or maintenance for Kidiverse, and is not responsible for any claim relating to it, including product liability, legal compliance or intellectual property claims — Nexoma Labs LLC is. Apple and its subsidiaries may enforce these terms as third-party beneficiaries.
 
-If you downloaded Kidiverse from Google Play, Google Play’s terms of service also apply to your use of the store.
+If you downloaded Kidiverse from Google Play, Google Play’s terms of service also apply to your use of the store, and Google Play’s own terms apply to buying Kidiverse Plus there.
 
 You may use Kidiverse only where the law allows it, and not in a country or by a person that is subject to a government embargo or restriction.
 
