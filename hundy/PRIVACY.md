@@ -2,7 +2,7 @@
 
 _Short, because there is very little to say._
 
-**Last updated:** 2026-10-21
+**Last updated:** 2026-11-04
 
 ## Who we are
 
@@ -59,6 +59,10 @@ No images, no video, no audio, no location, no contacts, no device identifiers a
 The optional daily reminder and the optional week-end reminder are scheduled locally by your device. No push server is involved and no reminder data is sent anywhere. Hundy asks for notification permission only when you choose to turn a reminder on.
 
 The voice coach uses the text-to-speech built into your phone. The only thing Hundy hands it is the word to say — a rep number or a short cue such as "go deeper".
+
+## Ratings
+
+Hundy may ask you to rate it using the rating sheet built into iOS or Android, and Settings has a link to Hundy's store page. Ratings and reviews go to Apple or Google under their own terms. Hundy sends nothing when it asks, and is never told whether, or how, you rated it.
 
 ## Device backups
 

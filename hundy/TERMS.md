@@ -2,7 +2,7 @@
 
 _The agreement between you and Hundy._
 
-**Last updated:** 2026-10-21
+**Last updated:** 2026-11-04
 
 ## The agreement
 

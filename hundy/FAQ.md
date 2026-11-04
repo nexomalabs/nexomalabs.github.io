@@ -2,7 +2,7 @@
 
 _The questions people ask about camera-based rep counting._
 
-**Last updated:** 2026-10-21
+**Last updated:** 2026-11-04
 
 ## Does Hundy record or upload video?
 
@@ -113,3 +113,9 @@ Settings → Data and privacy → Delete all data. It clears every workout, rep 
 Both live at the bottom of Settings. "Contact us" under Help opens an email to support@nexomalabs.com for anything that is broken or confusing. "Share feedback and suggestions" opens an email to hundy@nexomalabs.com for ideas about what Hundy should do next.
 
 Neither sends anything automatically. Each one opens your own mail app with the address filled in, so nothing leaves your phone until you press send.
+
+## Why did Hundy ask me to rate it?
+
+After a new personal best, or when you move up a league, Hundy may show your phone's own rating sheet. It only does this once you have done at least three camera workouts, never for a demo workout, and at most once per version of the app. Apple and Google also limit how often the sheet can appear, and may decide not to show it at all.
+
+Close it and nothing happens. Hundy is never told whether you rated it, or how. To leave a rating or a review at any time, tap Rate Hundy in Settings, which opens Hundy's store page.
